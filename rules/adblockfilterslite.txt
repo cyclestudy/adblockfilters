@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20241221162209
-! Last modified: 2024/12/21 16:22:09
-! Blocked Filters: 41972
+! Version: 20241222002124
+! Last modified: 2024/12/22 00:21:24
+! Blocked Filters: 41981
 !
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -7926,6 +7926,7 @@
 ##.ads.box
 ##.ads.cell
 ##.ads.cta
+##.ads.flex
 ##.ads.grid-layout
 ##.ads.square
 ##.ads.top
@@ -12397,6 +12398,9 @@
 ##.northad
 ##.not-an-ad-header
 ##.note-advertisement
+##.notice-ad-wrapper
+##.notice-ad-wrapper + .app-abk
+##.notice-ad-wrapper + .app-abk + .app-text
 ##.np-ad
 ##.np-ad-background
 ##.np-ad-border
@@ -13288,6 +13292,7 @@
 ##.simpleads-item
 ##.single-ad
 ##.single-ad-anchor
+##.single-ad-banner
 ##.single-ad-wrap
 ##.single-ads
 ##.single-ads-section
@@ -14166,6 +14171,7 @@
 ##.video-ad-bottom
 ##.video-ad-container
 ##.video-ad-content
+##.video-ad-item
 ##.video-ads
 ##.video-ads-container
 ##.video-ads-grid
@@ -14494,6 +14500,7 @@
 ##.yahooads
 ##.yan-sponsored
 ##.ympb_target
+##.yt-ad-com
 ##.yueduad1
 ##.zerg-widget
 ##.zerg-widgets
@@ -23247,6 +23254,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 526bt.com,guojitv.com###slider
 5278.cc,hboav.com#%#//scriptlet('prevent-setTimeout', '/ad block stop|warm_msg/')
 528500.com###wp > div[align="center"]
+52asus.com###AsusMall-contain
 52asus.com###guiigo-black-mask
 52bug.cn###index-code
 52ch.net##.ad650
@@ -38853,6 +38861,7 @@ zzzyk.com###Tinfo
 ||caipiao.163.com/$subdocument
 ||caixin.com/file/content/js/mobile_news_app_banner.js
 ||caixin.com/s?z=
+||caiyunapp.com/lingoCloud/banner/home-bottom-banner.
 ||camcaps.*/vsx.js
 ||carnoc.com/noticejs/
 ||cas.*.criteo.com^
