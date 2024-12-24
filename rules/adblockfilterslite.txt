@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20241224092421
-! Last modified: 2024/12/24 09:24:21
-! Blocked Filters: 41973
+! Version: 20241224162428
+! Last modified: 2024/12/24 16:24:28
+! Blocked Filters: 41978
 !
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -16733,6 +16733,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .lol/sw.js$third-party
 .lol^$domain=sextb.net|javplayer.org
 .lu/ads/
+.m.qiuwu.net^
 .mail.odysee.com/o/$image
 .mailbutler.io/tracking/
 .mailgun.patreon.com/o/$image
@@ -27675,6 +27676,8 @@ auto.ifeng.com##.acquire_1
 auto.qq.com###tips
 auto.sina.com.cn###bottomInquryBar
 autoaction.com.au,snokido.com##.square
+autoby.jp,daily.co.jp,j-town.net,wetteronline.de#%#//scriptlet('remove-node-text', 'script', '.slice(-2);return decodeURIComponent')
+autoby.jp,daily.co.jp,j-town.net,wetteronline.de$$script[tag-content=".slice(-2);return decodeURIComponent"]
 autocentrum.pl,parenting.pl,abczdrowie.pl,autokult.pl,fotoblogia.pl,komorkomania.pl,gadzetomania.pl,money.pl,so-magazyn.pl,o2.pl,pudelek.pl,wp.pl#@##ad-column
 autocentrum.pl,parenting.pl,abczdrowie.pl,autokult.pl,fotoblogia.pl,komorkomania.pl,gadzetomania.pl,money.pl,so-magazyn.pl,o2.pl,pudelek.pl,wp.pl#@#.ads
 autocentrum.pl,parenting.pl,abczdrowie.pl,autokult.pl,fotoblogia.pl,komorkomania.pl,gadzetomania.pl,money.pl,so-magazyn.pl,o2.pl,pudelek.pl,wp.pl#@#.top-banners
@@ -27762,7 +27765,7 @@ babynamegenie.com,comparitech.com,ecaytrade.com,nbcbayarea.com,nwherald.com,over
 babynamegenie.com,forless.com,worldtimeserver.com##.links
 babynombres.com,culturanimation.com,nombresmolones.com,recetasmaria.com,recipesandcooker.com,sombracycling.com,techobras.com##.pbl
 babytree.com##.side-text-slider
-backcar.fr,flat-ads.com,job.inshokuten.com#@#.ad-content
+backcar.fr,encuentra24.com,flat-ads.com,job.inshokuten.com#@#.ad-content
 backpack.tf,backpacktf.com#?#.panel:-abp-contains(createAd)
 backpacker.com,betamtb.com,betternutrition.com,cleaneatingmag.com,climbing.com,gymclimber.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,rockandice.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##.c-thinbanner
 badgerandblade.com,ginx.tv##[data-ez-ph-id]
@@ -33065,6 +33068,7 @@ lk21official.*###player-lux
 lk21official.life,playeriframe.*###admad
 lk21official.life,sekedarinfo.*,jujijaji.*,playeriframe.*###donate
 lkong.com##.lkong-ads
+llysc.cn###fbi-top-fixed-ad
 lnk.parts,lnk.news#%#//scriptlet("prevent-setTimeout", "redirectPage")
 loadout.tf#$?#.flex-panel[style^="display: flex; flex-direction: column; order:"] > .loadout-application-advertisement-header:upward(1) { position: absolute!important; left: -3000px!important; }
 loadout.tf#$?#.loadout-application-top > div[style]:has(> div[style] > div[data-i18n="#advertisement"]) { position: absolute !important; left: -3000px !important; }
@@ -37058,7 +37062,6 @@ weranda.pl,werandacountry.pl##.banner_flex
 weraveyou.com,vermangasporno.com##a[href^="https://bit.ly"]
 westmanga.*##.kln
 westmanga.*#%#//scriptlet('abort-current-inline-script', '$', 'window.open')
-wetteronline.de$$script[tag-content=".slice(-2);return decodeURIComponent"]
 wetv.vip###google-ads-player
 wetv.vip#%#//scriptlet("adjust-setTimeout", "onAdsCompleted", "5000", "0.02")
 whatleaks.site,troypoint.com##.mysticky-welcomebar-fixed
@@ -39232,7 +39235,6 @@ zzzyk.com###Tinfo
 ||dianxin.com^$third-party
 ||diaoyu123.com/cpro/show.js
 ||dict.youdao.com/vip/privilege/show/V*?bannerType=fanyiTop$domain=fanyi.youdao.com
-||dig.chouti.com/advert
 ||dimtown.com/adimg/
 ||dingdangsheji.com^*/%E5%9B%BE%E6%80%AA%E5%85%BD
 ||dingdangsheji.com^*/%E7%94%BB%E6%9D%BF-
@@ -39906,6 +39908,7 @@ zzzyk.com###Tinfo
 ||images-*.ssl-images-amazon.com/images/*/sf/DAsf-*_.js
 ||images.china.cn^*first/$subdocument
 ||images.jurong.cn/bbs/
+||images.whoer.com/image/*.gif
 ||imeee.cn/DA_HTML/*.js
 ||imeee.cn/DA_HTML/bottom_960x90.html
 ||img*.365rich.cn/image/$image
@@ -40726,6 +40729,7 @@ zzzyk.com###Tinfo
 ||piaohua.com/js/yzz/$script
 ||piaoliang.com/js/all.js
 ||piaoliang.com/js/gg.js
+||pic.959.cn/media/js/
 ||pic.gongkong.com/UploadPic/gongkong/
 ||pic.yupoo.com/showflash/
 ||piclick.cn^$third-party
@@ -41778,6 +41782,7 @@ zzzyk.com###Tinfo
 ||xkzzz.com/zb_users/plugin/MoreLinks/MoreLinks.
 ||xlog*-*.tiktokv.com^
 ||xmindchina.
+||xmrc.com.cn/net/info/html/
 ||xn--*.xn--fiqs8s:
 ||xnimg.cn^*/liveinc/rightlive.js
 ||xnnews.com.cn/adgl/
