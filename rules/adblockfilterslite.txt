@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250109002425
-! Last modified: 2025/01/09 00:24:25
-! Blocked Filters: 41995
+! Version: 20250109092412
+! Last modified: 2025/01/09 09:24:12
+! Blocked Filters: 41989
 !
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -16306,7 +16306,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 -tracking-pixel.
 -ulogl*.kwai-pro.com^
 -universal-analytics/
--web-advert-
+-web-advert-$image
 -wrapper-analytics-prod.cloudfunctions.net/
 .*gcdcjr000.fun/$script,third-party
 .*ouvxli*.top/$script,third-party
@@ -16350,7 +16350,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .ads-min.
 .ads.controller.
 .ads.css
-.ads.darla.
 .adsbox.
 .advert.$domain=~advert.ae|~advert.ge|~advert.io|~advert.ly|~advert.media|~advert.org.pl
 .alcmpn.com/
@@ -16362,7 +16361,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .aspx?adid=
 .aveda.com/t/$image
 .awstrack.me/$image
-.az/adv/
+.az/adv/$~xmlhttprequest
 .az/banner/
 .az/reklamexport_
 .backblaze.com/e2t/$image
@@ -26895,7 +26894,6 @@ _StickyAd.
 _WebVitalsReporter_
 _ad_250.
 _ad_300.
-_ad_728_
 _ad_banner.
 _ad_bottom.
 _ad_box.
@@ -26912,7 +26910,6 @@ _ad_sidebar_
 _ad_skyscraper.
 _ad_wrapper.
 _adbanner_
-_adbanners.
 _adchoice.
 _adchoices.
 _adhome.
@@ -26943,7 +26940,6 @@ _background_ad.
 _banner_ad.
 _banner_ad_
 _bannerad.
-_bannerads_
 _beacon?
 _billboard_320x100.iframe.
 _bottom_ads.
@@ -26959,7 +26955,6 @@ _event_tracking?
 _fioiwhfo_
 _float_fuo.js
 _footer_ad_
-_google_ads.
 _gpt_ads.
 _header_ad.
 _header_ad_
@@ -26977,7 +26972,7 @@ _panel_ads.
 _partner_ad.
 _popAds.
 _popunder_
-_prebid.js
+_prebid.js$script
 _pushads.
 _rectangle_ads.
 _reklama_$domain=~youtube.com
@@ -26997,7 +26992,6 @@ _stat.php?referer=
 _stat_counter.php?
 _sticky_ad.
 _text_ads.
-_textads.
 _tm11_pmt_
 _top_ad.
 _trackWebtrekkEvents.
