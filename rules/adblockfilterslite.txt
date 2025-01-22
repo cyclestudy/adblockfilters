@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250122162457
-! Last modified: 2025/01/22 16:24:57
-! Blocked Filters: 41925
+! Version: 20250123002424
+! Last modified: 2025/01/23 00:24:24
+! Blocked Filters: 41930
 !
 ###AC_ad
 ###AD_160
@@ -24168,6 +24168,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@|beta.partners.adsterra.com^|
 @@|beta.publishers.adsterra.com^|
 @@|core.crazyegg.com^|
+@@|daraz.com^|
 @@|data:text^$popup,domain=box.com|clker.com|labcorp.com
 @@|ezodn.com^|
 @@|forefront.ai^$stealth=3p-cookie
@@ -24187,6 +24188,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@|statcounter.com^|
 @@|steamgamesales.com^$urlblock
 @@|ws://*$websocket,domain=flirt4free.com
+@@|www.daraz.pk^|
 @@||*.php?id=$subdocument,stealth=referrer,domain=dubznetwork.com
 @@||*optout$domain=smartadserver.com
 @@||*optout$domain=youronlinechoices.com
@@ -25864,6 +25866,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=udemydownload.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ufacw.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=uiadmin.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=uiadmin.net|4horlover.com|23qb.net|4spaces.org|aboluowang.com|assbbs.com|bilinovel.com|chaojizhibo.net|chtoen.com|daxiaamu.com|demo.ama.pub|dizhishengcheng.com|doitwell.tw|ekamus.info|eu4cn.com|ff14angler.com|freedidi.com|fsbot.xyz|haoweichi.com|it365.abctool.info|linovelib.com|logi.im|mens1069.com|monnsutogatya.com|mpyit.com|myqqjd.com|numberempire.com|ozabc.com|pansearch.me|patch.ali213.net|pc3mag.com|reh.tw|shenfendaquan.com|sistersbedroom.com|sto520.com|vaptcha.com|wandhi.com|wenxuecity.com|wuyong.fun|xbeibeix.com|xiebruce.top|xugaoxiang.com|xxxxx520.com|yodu.org|yummy.best|zaixianjisuan.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ujszo.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ultimateclassicrock.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=unityassets4free.com
@@ -27459,7 +27462,7 @@ apple.com.cn#$##ac-globalnav { top: 0 !important; }
 apple.com.cn#$#.ac-gn-blur { top: 0 !important; }
 apple.com.cn#$#html #globalnav { top: 0 !important; }
 apple.com.cn#$#html { margin-top: 0 !important; }
-appleinsider.com,dappradar.com,euroweeklynews.com,sitepoint.com,tld-list.com##[rel*="sponsored"]
+appleinsider.com,dappradar.com,euroweeklynews.com,metro.co.uk,sitepoint.com,tld-list.com,twitch-tools.rootonline.de,wccftech.com##[rel*="sponsored"]
 appnee.com#$?#body[style*="visibility"] { visibility: visible !important; }
 apps2app.com,dynamicpapers.com,myreadingmanga.info,linnk.info,tpaste.net,f1fanklub.pl#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "|kcolbdakcolb|")
 apptrigger.com,fansided.com,lastnighton.com,mlsmultiplex.com,netflixlife.com,playingfor90.com,winteriscoming.net##.mosaic-banner
@@ -33872,6 +33875,7 @@ nocensor.*##.alert-dismissible[onclick^="window.open("][onclick*="/vpn/"]
 nodejs.cn###biz_center
 nodejs.cn###biz_nav
 nodejs.cn###pagead
+nodejs.cn###pagead0
 nodejs.cn#%#//scriptlet('set-constant', '_AdBlockInit', 'noopFunc')
 nohat.cc,psd.world,png.is#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 nolive.me,cat-a-cat.net,comando.to,gogoplay5.com,voirseries.io,seeeed.xyz,arabseed.*,crichd.*,mangadna.com,tomatomatela.com,akwam.*,megafilmeshd50.com,prmovies.ph,uploadrar.com,go-stream.site,mp3juice.info,gogoplay.*,freemoviesfull.com,stape.fun,gomovies.*,xsanime.com,rodanesia.com,gnula.nu,filmovi.co,123movies2022.org,thenetnaija.co,extralinks.*,4anime.gg,deportealdia.live,mangalek.com,skidrowcodex.net,katflys.com,watchonlinemovies50.com.pk,viprow.*,strikeout.*,emule-island.eu,hdfilme.cx,masteredutech.com,dl-protect.info,zone-telechargement.*,123moviesc.*,pahe.ph,adshort.*,nuroflix.club,mlsbd.shop,appvn.com,yifysubtitles.vip,oploverz.*,jkanime.net,tamilfreemp3songs.com,ostreaming.tv,govid.cyou,watchseries.*,romshub.com,mp3juices.cc,comedyshow.to,streamta.*,watchdoctorwhoonline.com,allinonedownloadzz.site,gdriveplayer.us,watchtheoffice.cc,watchcharmedonline.com,egyshare.cc,vidembed.*#%#//scriptlet("abort-current-inline-script", "Promise", "delete window")
@@ -39001,6 +39005,7 @@ zzzyk.com###Tinfo
 ||collect-elb-*.amazonaws.com^
 ||collect-v*.51.la^
 ||collector*.ex.co^
+||collector-*.px-client.net^
 ||collector-*.px-cloud.net^
 ||collector-*.tvsquared.com^
 ||collector-*.us.tvsquared.com^
