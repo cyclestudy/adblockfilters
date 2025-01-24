@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250124002353
-! Last modified: 2025/01/24 00:23:53
-! Blocked Filters: 41927
+! Version: 20250124092229
+! Last modified: 2025/01/24 09:22:29
+! Blocked Filters: 41929
 !
 ###AC_ad
 ###AD_160
@@ -16295,6 +16295,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .*ouvxli*.top/$script,third-party
 .*roytj33.fun/$script,third-party
 .*ryt111.fun/$script,third-party
+.012*sop.xyz/$script,third-party
 .1.1.1.l80.js^
 .1.1.1.l80.js^$third-party
 .120x600.
@@ -16887,6 +16888,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .vip/js/ads/
 .vip/style/vue.js?v=
 .vn/zones/zone-$script
+.vzbv.de/-open2/$image
 .warehousefashion.com/warehouse/e/$image
 .wasabisys.com/adsjf/
 .webex.com/q/
@@ -17349,7 +17351,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /StatsService.RecordStats?
 /Sw_commonAD.js$script
 /T/OFC4/*$image
-/TA390hz2.js
 /TeaLeaf.js
 /TeaLeafCfg.js
 /TealeafSDK.js
@@ -41446,6 +41447,7 @@ zzzyk.com###Tinfo
 ||uc129.com/m/
 ||uedas.$domain=qdmm.com|qdwenxue.com|qidian.com
 ||ulog*.*^
+||ulog*.kwai-pro.com^
 ||ulog*.kwaipros.com^
 ||unblocked.*/abd.js
 ||unblocked.*/abe.js
