@@ -3,8 +3,8 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250130002357
-! Last modified: 2025/01/30 00:23:57
+! Version: 20250130092114
+! Last modified: 2025/01/30 09:21:14
 ! Blocked Filters: 41956
 !
 ###AC_ad
@@ -16774,6 +16774,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .org/script/compatibility.js$third-party
 .org/topjs/
 .pageview-props.js
+.personaclick.com/track/$image
 .php$script,domain=onmpeg.com
 .php*&sadbl=$domain=vipbox.*
 .php?*&v=direct&siteId=*&minBid=*&popundersPerIP=
@@ -27514,7 +27515,6 @@ atefaucet.com,coinsrev.com#%#//scriptlet("prevent-addEventListener", "load", "li
 athlonsports.com,bringmethenews.com,meidastouch.com,si.com##.is-exco-player
 atlantablackstar.com,finurah.com,theshadowleague.com##.raptive-ddm-header
 atlantatribune.com,barrettsportsmedia.com,footballleagueworld.co.uk,ioncinema.com,marijuanamoment.net,ripplecoinnews.com,srilankamirror.com,tribune.net.ph###mvp-leader-wrap
-atlanticsuperstore.ca,fortinos.ca,loblaws.ca,maxi.ca,newfoundlandgrocerystores.ca,nofrills.ca,provigo.ca,realcanadiansuperstore.ca,valumart.ca,yourindependentgrocer.ca,zehrs.ca#?#.chakra-container:-abp-contains(Sponsored)
 atlanticsuperstore.ca,fortinos.ca,loblaws.ca,maxi.ca,newfoundlandgrocerystores.ca,nofrills.ca,provigo.ca,realcanadiansuperstore.ca,valumart.ca,yourindependentgrocer.ca,zehrs.ca#?#.product-tile-group__list__item:-abp-contains(Sponsored)
 atlanticsuperstore.ca,fortinos.ca,maxi.ca,newfoundlandgrocerystores.ca,nofrills.ca,provigo.ca,realcanadiansuperstore.ca,valumart.ca,yourindependentgrocer.ca,zehrs.ca##.block-wrapper:has(.element-header__sponsoredLabel)
 atlanticsuperstore.ca,fortinos.ca,maxi.ca,newfoundlandgrocerystores.ca,nofrills.ca,provigo.ca,realcanadiansuperstore.ca,valumart.ca,yourindependentgrocer.ca,zehrs.ca#?#[data-testid="card"]:-abp-contains(sponsored)
