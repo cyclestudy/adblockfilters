@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250201162135
-! Last modified: 2025/02/01 16:21:35
-! Blocked Filters: 41991
+! Version: 20250202002036
+! Last modified: 2025/02/02 00:20:36
+! Blocked Filters: 41994
 !
 ###AC_ad
 ###AD_160
@@ -17195,6 +17195,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /?redirect&placement=$popup
 /?ref=$popup,domain=hltv.org
 /?request_ab*&zoneid=*&rb=$all
+/?s=from_notification_service&u=$image
 /?scontext_r=*&nrb=$all
 /?sentry_key=
 /?sentry_version=
@@ -21108,6 +21109,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /sentry-browser.min.js
 /sentry-browser.tracing.es5.min.js
 /sentry-logger.js
+/sentry-tracing.min.js
 /sentry/bundle.min.js
 /seo.taCo.min.js
 /seo/pageStat/*
@@ -39763,7 +39765,8 @@ zzzyk.com###Tinfo
 ||houseofblogger.com^$replace=/'https:\/\/tpc\.googlesyndication.com\/simgad\/[\s\S]*?'/'https:\/\/dropgalaxy\.com\/assets\/img\/logoo\.png'/
 ||howbuy.com/subject/js/jquery.blockUI.js
 ||howbuy.com/subject/js/layer/layer.js
-||hoyoverse.com/dora/biz/mihoyo-h5log/
+||hoyoverse.com/device-fp/
+||hoyoverse.com/dora/biz/*-h5log/
 ||hqdoor.com/Web/
 ||hqol.cn/up/ad/
 ||hrjg.com.cn^$third-party
