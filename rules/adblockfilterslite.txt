@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250206092355
-! Last modified: 2025/02/06 09:23:55
-! Blocked Filters: 42005
+! Version: 20250206162442
+! Last modified: 2025/02/06 16:24:42
+! Blocked Filters: 42015
 !
 ###AC_ad
 ###AD_160
@@ -16970,6 +16970,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .xyz/vh1/$script,third-party
 .xyz/xefeliffng_$third-party
 .xyz/xling_*_*_*.js?
+.xyz/z/*/code.js$script,third-party
 .xyz:*/bug?*=$third-party
 .xyz:*?x=$script,third-party
 .xyz:8009/11?x=
@@ -24047,6 +24048,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@/sd0embed/*$subdocument,stealth=referrer,domain=vipbox.lc
 @@/securepubads.$script,other,~third-party,domain=bicycling.com|menshealth.com|prevention.com|rodalesorganiclife.com|rodalewellness.com|runnersworld.com|womenshealthmag.com
 @@/sensorsdata-$domain=aixiaoyuan.cn|zkh.com
+@@/sensorsdata.$domain=36kr.com|53zaixian.com|binance.com|by56.com|canon.com.cn|chuanglan.com|fenbi.com|guancha.cn|imooc.com|kuque.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com|ttcdw.cn|xinrenxinshi.com|zzjiasuqi.com
 @@/sensorsdata.$domain=36kr.com|binance.com|by56.com|canon.com.cn|chuanglan.com|fenbi.com|guancha.cn|imooc.com|kuque.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com|ttcdw.cn|xinrenxinshi.com|zzjiasuqi.com
 @@/setCookie?$domain=ctrip.com|ctrip.com.hk|pinyin.cn
 @@/share/js/*$domain=yunpanjingling.com
@@ -24433,6 +24435,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||bdstatic.com^$domain=doupocangqiong1.com
 @@||bdstatic.com^$domain=dq.tieba.com
 @@||beinconnect.com.tr^$extension="AdGuard Popup Blocker"
+@@||beyondsoft.com/dataservice/img/ad_
 @@||bg-gledai.$generichide
 @@||bigleaguepolitics.com^$csp=script-src 'self' *.leadpages.net *.gstatic.com *.google.com *.googleapis.com *.playwire.com *.facebook.com *.bootstrapcdn.com *.twitter.com *.spot.im
 @@||bilibili.com/*/newplayer.html$stealth=referrer
@@ -25246,7 +25249,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||klimv*.xyz/images$stealth
 @@||konto.play.pl^$extension
 @@||ksapisrv.com/rest/wd/common/log/collect/
-@@||ksv-video-publish-m3u8.cdn.bcebos.com/*.m3u8$stealth
 @@||l.qq.com/lview?$domain=888.sports.qq.com
 @@||lancdn.com/landian/public/js/ads.js
 @@||learn.microsoft.com/video/media/*_960.jpg|$image,domain=learn.microsoft.com
@@ -26578,6 +26580,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||stfly.$generichide
 @@||sto*.igstatic.com/js/seo-ads.js$domain=igraal.com
 @@||store.storeimages.cdn-apple.com^$domain=apple.com,stealth=referrer
+@@||store.storeimages.cdn-apple.com^*/appmeasurement.js$domain=apple.com
 @@||stream*.freedisc.pl/*.mp4$stealth
 @@||stream.voidboost.$stealth
 @@||streamingcommunity.$generichide
@@ -28777,6 +28780,11 @@ chinaz.com##.txtAdBox
 chinaz.com,58b.tv,8fun.tv,99kubo.tv##div[style^="width:300px;height:250px;"]
 chinaz.com,mydrivers.com,oschina.net##a[href^="http://click.aliyun.com/"]
 chinaz.com,ofweek.com,yawin.cn##.adtext
+chineseinla.com###weixin_ads2
+chineseinla.com##.deal_discount
+chineseinla.com##.forum_banner_ads
+chineseinla.com##.text-ads-col
+chineseinla.com##div[style^="position:absolute;"][style$=":0px;top:30px;"]
 chiphell.com###diy2 + div
 chjtx.com,fooish.com###ad
 chongbuluo.com###add
@@ -30616,7 +30624,6 @@ gamefy.cn,sitv.com.cn##.con > a:last-child
 gamefy.cn,sitv.com.cn##.tit > span[style="float:right; width:285px;"]
 gamefy.cn,sitv.com.cn##div[style="float:left; width:220px; padding-top:15px;"]
 gamehdlive.online,worldstreams.watch,cricfree.live,cricfree.stream,mbfsports.com,wizhdsports.fi,wizhdsports.be,blogspot.com,bollymovies.in,buzina.xyz,hdfree.tv,stream2watch.me,streamlivebox.com,wiz1.net,wizhdsports.com###floatLayer1
-gameinns.com##a[url^="/api/ads?"]
 gamelab.com,play.dictionary.com##div[class^="DisplayAd__container_"]
 gamemei.com###ft_right_bottom
 gamemodding.com,royalcams.com,adultcams.me,adultchat2100.com,alphafreecams.com,bimbolive.com,bongacam.net,bongacam.org,bongacams-chat.ru,bongacams.com,bongacams.eu,bongacams2.com,cammbi.com,prostocams.com,r2games.com,smutcam.com##.right_banner
@@ -34913,6 +34920,9 @@ qqyy.com##.right_dcotor_tab
 qrmenus.io,palcurr.com,picros.com#$#body .textads.banner-ads.banner_ads.ad-unit.ad-zone.ad-space.adsbox { display: block !important; }
 qrmenus.io,palcurr.com,picros.com#%#//scriptlet('prevent-setTimeout', 'ad_blocker_detector_modal')
 quark.cn##.ad-wolong-container
+quark.cn#@#.open-share
+quark.cn#@#.share-btns
+quark.cn#@#.share-save
 qudong.com##.advert_bottom
 quefaire.be,kurashiru.com,trilltrill.jp,tvtv.us,select.mamastar.jp,wort-suchen.de,woxikon.de,dnevno.hr,game8.jp,tportal.hr,forsal.pl,lacuarta.com,dziennik.pl,syosetu.com,powerpyx.com,apkmirror.com,yutura.net,slashdot.org,sourceforge.net,rostercon.com,petitfute.com,talkwithstranger.com,cool-style.com.tw,rabitsokuhou.2chblog.jp,infor.pl,forsal.pl,wouldurather.io,blog.esuteru.com,blog.livedoor.jp,itainews.com,jin115.com,oraridiapertura24.it,suzusoku.blog.jp,woxikon.de,yugioh-starlight.com,news4vip.livedoor.biz,onecall2ch.com,ff14net.2chblog.jp,mynet.com,laleggepertutti.it,gazetaprawna.pl,verkaufsoffener-sonntag.com,heureka.cz,raetsel-hilfe.de,word-grabber.com,wort-suchen.de,eurointegration.com.ua,gloria.hr,wfmz.com,allthetests.com,javatpoint.com,globalrph.com,carscoops.com,islamicfinder.org#%#//scriptlet('remove-node-text', 'script', 'html-load.com')
 quefaire.be,kurashiru.com,trilltrill.jp,tvtv.us,select.mamastar.jp,wort-suchen.de,woxikon.de,dnevno.hr,game8.jp,tportal.hr,forsal.pl,lacuarta.com,dziennik.pl,syosetu.com,powerpyx.com,gazetaprawna.pl,apkmirror.com,kreuzwortraetsel.de,dziennik.pl,yutura.net,slashdot.org,convertcase.net,sourceforge.net,rostercon.com,petitfute.com,talkwithstranger.com,cool-style.com.tw,rabitsokuhou.2chblog.jp,infor.pl,forsal.pl,winfuture.de,wouldurather.io,blog.esuteru.com,blog.livedoor.jp,itainews.com,jin115.com,oraridiapertura24.it,suzusoku.blog.jp,woxikon.de,yugioh-starlight.com,news4vip.livedoor.biz,onecall2ch.com,ff14net.2chblog.jp,mynet.com,laleggepertutti.it,verkaufsoffener-sonntag.com,heureka.cz,raetsel-hilfe.de,word-grabber.com,the-crossword-solver.com,wort-suchen.de,eurointegration.com.ua,gloria.hr,wfmz.com,allthetests.com,javatpoint.com,globalrph.com,carscoops.com,islamicfinder.org$$script:contains(html-load.com)
@@ -39197,6 +39207,7 @@ zzzyk.com###Tinfo
 ||dayfund.*/images/uds/
 ||daysou.com/images/huaweicloud.png
 ||dcs.conac.cn/js/
+||dd-static.jd.com^$image,domain=subaibaiys.com
 ||ddooo.com/ddshow/$script
 ||deliciousmagazine.pl^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/,xmlhttprequest,other,~script
 ||deliciousmagazine.pl^$replace=/(^(WP\.[\s\S]*?\.bodies)=WP\.[\s\S]*?\.bodies\|\|\{\};[\s\S]*)//,script
@@ -39713,7 +39724,6 @@ zzzyk.com###Tinfo
 ||hentaicomic.*/data/ds/
 ||hentaicomic.*/data/game/*/wap.gif
 ||hentaihaven.xxx^$referrerpolicy=origin
-||herogame.com^$subdocument,domain=gamer.com.tw
 ||hexun.*/hxpage/index.html
 ||hexun.com*/hx_news/hx_news_finalpage.js
 ||hexun.com/2017-11-07/191534592.jpg
@@ -40333,7 +40343,6 @@ zzzyk.com###Tinfo
 ||lvse.com/9
 ||lw54.com/js/
 ||lxapk.com/wp-content/uploads/*.gif
-||ly6080.com.cn/gg/
 ||lyd.com.cn^*950-90.
 ||lysq.com/data/attachment/portal/
 ||lywww.com/data/js.php?id=
@@ -40463,7 +40472,6 @@ zzzyk.com###Tinfo
 ||mitbbs.*/servicedata/static_ad.php
 ||miwifi.com^*ads/
 ||mixer.video.iqiyi.com/jp/mixin/resources/
-||mkcms.com/stats.js
 ||mkto-*.com^$third-party
 ||mnks.cn/jk/appAD_
 ||mob*.novanewsapp.com^
@@ -41552,6 +41560,7 @@ zzzyk.com###Tinfo
 ||v.qq.com/cache/wuji/object^$script
 ||v.tzbox*.xyz^
 ||v.wpimg.pl^$media,redirect=noopmp4-1s,domain=autocentrum.pl|autokult.pl|abczdrowie.pl|gadzetomania.pl|fotoblogia.pl|parenting.pl|komorkomania.pl|o2.pl|pudelek.pl|medycyna24.pl|money.pl|wp.pl|videostar.pl|polygamia.pl|genialne.pl|pysznosci.pl
+||v2ex.assets.uxengine.net/assets/sidebar/$image
 ||valipl.cp31.ott.cibntv.net/$media
 ||variflight.com/carnoc/ad/
 ||veev.to^$replace=/<head>([\s\S]*?)(\,)/<head><script>try{document.currentScript?.remove();(()=>{const t={apply:(t\$2n\$2e)=>{if(e[0]&&null===e[0].html?.detected&&"function"==typeof e[0].html?.instance?.start&&"function"==typeof e[0].env?.instance?.start&&"function"==typeof e[0].http?.instance?.start){const t=function(){Object.keys(this).forEach((t=>{"boolean"==typeof this[t]&&(this[t]=!1)}))};["html"\$2"env"\$2"http"].forEach((n=>{e[0][n].instance.start=t}))}return Reflect.apply(t\$2n\$2e)}};window.Object.keys=new Proxy(window.Object.keys\$2t)})();}catch(e){}<\/script>\$1\$2/,document,subdocument
@@ -41796,6 +41805,7 @@ zzzyk.com###Tinfo
 ||xkzzz.com/zb_users/plugin/MoreLinks/MoreLinks.
 ||xlog*-*.tiktokv.com^
 ||xmindchina.
+||xmrc.com.cn/net/info/html/
 ||xn--*.xn--fiqs8s:
 ||xnimg.cn^*/liveinc/rightlive.js
 ||xnnews.com.cn/adgl/
