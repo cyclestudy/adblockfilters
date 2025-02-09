@@ -3,8 +3,8 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250209002038
-! Last modified: 2025/02/09 00:20:38
+! Version: 20250209092742
+! Last modified: 2025/02/09 09:27:42
 ! Blocked Filters: 42068
 !
 ###AC_ad
@@ -20823,7 +20823,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /publisher:getClientId?key=
 /publishertag.js
 /publitas-stats.js
-/pubstats.$domain=~pubstats.dev
+/pubstats.$domain=~pub.dev|~pubstats.dev
 /pubtag.js
 /pulsario.js
 /pus/script$domain=turbobit1.com|turbobiyt.net|turbobita.net
@@ -35794,7 +35794,7 @@ sport-tv-guide.live,tecnotutoshd.net,lightnovelworld.com,androidaba.com,cshort.o
 sport.cz$$script[wildcard="*parseInt*ssp*"][min-length="100000"][max-length="200000"]
 sport.pl,gazeta.pl##.bottom_section > .promo-mg
 sport.pl,gazeta.pl##div[id^="DFP-007-CONTENTBOARD"]
-sportbible.com,unilad.com##.floating-video-player_container__u4D9_
+sportbible.com,unilad.com,uniladtech.com##.floating-video-player_container__u4D9_
 sportfacts.net,sportshub.to##.popSc
 sportnews.to,streameast.to##.adsbyvli
 sportnews.to,tapisa.online,perrzo.com,topsporter.net##.aoa_overlay
