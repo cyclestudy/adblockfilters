@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250222002403
-! Last modified: 2025/02/22 00:24:03
-! Blocked Filters: 42187
+! Version: 20250222092237
+! Last modified: 2025/02/22 09:22:37
+! Blocked Filters: 42189
 !
 ###AC_ad
 ###AD_160
@@ -17781,6 +17781,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /ad.min.js$script
 /ad.php?tag=$popup
 /ad.php?zone$popup
+/ad/ad?p=$popup
 /ad/ad_common.js$script
 /ad/display.php$popup
 /ad/getban?$script
@@ -20078,6 +20079,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /livestats.js
 /livezilla/server.php?request=track&
 /ljcounter/?d=
+/lmaz-ads-bannesr/*$script
 /load_analytics.php
 /loader-wp/static/loader.min.js?
 /loader/counter.js
