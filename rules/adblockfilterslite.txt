@@ -3,8 +3,8 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250222162154
-! Last modified: 2025/02/22 16:21:54
+! Version: 20250223002056
+! Last modified: 2025/02/23 00:20:56
 ! Blocked Filters: 42155
 !
 ###AC_ad
@@ -27,7 +27,6 @@
 ###AdBar
 ###AdBigBox
 ###AdBillboard
-###AdBlock
 ###AdBottomLeader
 ###AdBottomRight
 ###AdBox2
@@ -15564,7 +15563,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 *##.adtable
 *##div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#preAdContent
 *$doc,removeparam=/^utm_/
-*$document,csp=script-src-attr 'none',domain=cruciverba.it|motscroises.fr|palabr.as|word-grabber.com|wort-suchen.de|lamire.jp|picrew.me|badmouth1.com|jin115.com|gloria.hr|etnews.com|sportsseoul.com|hoyme.jp|heraldm.com|winfuture.de
+*$document,csp=script-src-attr 'none',domain=cruciverba.it|motscroises.fr|palabr.as|word-grabber.com|wort-suchen.de|lamire.jp|picrew.me|badmouth1.com|jin115.com|gloria.hr|etnews.com|sportsseoul.com|hoyme.jp|heraldm.com
 *$image,redirect-rule=32x32-transparent.png,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in|miuiflash.com|thecubexguide.com|jytechs.in
 *$image,redirect=1x1-transparent.gif,domain=proviralhost.com
 *$redirect-rule=noopjs,xmlhttprequest,domain=werfgt.fun
@@ -19024,6 +19023,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /disp_cnt.php
 /dispatch.fcgi?
 /display/items.php?$script,third-party
+/dist/adsPrebid.js$script
 /divolte.js
 /dl-web-pixel.js
 /dla_tracker.js
