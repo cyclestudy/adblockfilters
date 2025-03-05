@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250305002541
-! Last modified: 2025/03/05 00:25:41
-! Blocked Filters: 42056
+! Version: 20250305092737
+! Last modified: 2025/03/05 09:27:37
+! Blocked Filters: 42058
 !
 ###AC_ad
 ###AD_160
@@ -36912,8 +36912,10 @@ walmart.*##a[href*=".criteo.com/"]
 walmart.*##div[class="mb1 ph1 pa0-xl bb b--near-white w-25"]:has(div[data-ad-component-type="wpa-tile"])
 walmart.*##div[class="mv3 ml3 mv4-xl mh0-xl"][data-testid="sp-item"]
 walmart.*##div[data-automation^="HookLogicCarouses"]
+walmart.*##div[data-testid^="sba-container"]
 walmart.*##li.items-center:has(div[data-ad-component-type="wpa-tile"])
 walmart.*#?#div > div[io-id]:-abp-contains(Sponsored)
+walmart.*#?#div[role="group"]:-abp-has(div:-abp-contains(/Sponsored|Commandité/))
 walterfootball.com$$script[tag-content="if (window.TextDecoder) return (new window.TextDecoder(""utf-8"")).decode("][max-length="30000"]
 wandhi.com##.table img
 wandhi.com##.table-bordered
