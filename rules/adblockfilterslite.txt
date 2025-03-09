@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250309162026
-! Last modified: 2025/03/09 16:20:26
-! Blocked Filters: 42125
+! Version: 20250310001923
+! Last modified: 2025/03/10 00:19:23
+! Blocked Filters: 42123
 !
 ###AC_ad
 ###AD_160
@@ -17734,6 +17734,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /_a_xb/*$xmlhttprequest,domain=m.xcum.com|hellporno.com,redirect-rule=nooptext
 /_adslot/*
 /_blazor/*$ping
+/_fd?subid1=$xmlhttprequest
 /_ga?send&
 /_ga?sponsor_pixel=
 /_gz/counter.php?
@@ -23614,8 +23615,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://www.*.com/js/css/$script,third-party,header=link:/adsco\.re\/>;rel=preconnect/
 ://www.*.com/js/css/$script,third-party,header=popads-node
 ://www.*.js|$script,third-party,domain=159i.com|r3sub.com|thisav.com
-://www.*.xyz/contents/*/-1/$script,subdocument,third-party,xmlhttprequest
-://www.*.xyz/contents/*?h=$script,third-party
 ://www.*.xyz/script/$script,third-party,domain=jmty.jp|dolldivine.com|knowt.com|bbs.animanch.com|thefreebieguy.com
 ://www.vinted.*/relay/events
 ://www3.doubleclick.net^|$xmlhttprequest,redirect=noopjson
@@ -28543,8 +28542,8 @@ businesstoday.in,aajtak.in##.right-side-tabola
 businessworld.in,thelocalproject.com.au,inkthemes.com,watchxxxfree.com##.sidebar-banner
 buzz.ie,irishpost.com,theweekendsun.co.nz##.add-block
 buzzfeed.com,buzzfeednews.com##.desktop-sticky-ad_desktopStickyAdWrapper__a_tyF
+buzzfeed.com,buzzfeednews.com,winfuture.de#%#//scriptlet('trusted-suppress-native-method', 'Element.prototype.setAttribute', ' |"error-report.com"')
 buzzfeed.com,darkreading.com,gamedeveloper.com,imgur.io,iotworldtoday.com,sevendaysvt.com,tasty.co,tucsonweekly.com##.Ad
-buzzfeednew-s.com,winfuture.de#%#//scriptlet('trusted-suppress-native-method', 'Element.prototype.setAttribute', ' |"error-report.com"')
 buzztv.futbol,streamsport.pro,sportsonline.*,hdstreams.club###html1
 bypassed.eu,bypassed.bz##cloudflare-app[app="flashcard"]
 byxx.com##.byzwPC-banner-ADscroll
@@ -37254,7 +37253,6 @@ wsj.com,edition.cnn.com#%#//scriptlet('set-constant', 'apstag', 'undefined')
 wsls.com,gmg-wjxt-prod.cdn.arcpublishing.com,ksat.com##.topWrapper
 wss://*.xyz:*?x=$third-party
 wss://*/api/wss/GetNotReadCount$third-party
-wss://www.*.xyz/ws^$third-party
 wstream.video,akvideo.stream###overlayx
 wstream.video,ouo.io##div[id*="ScriptRoot"]
 wuxiaworld.com,frontpage.pch.com##div[id^="placement-"]
