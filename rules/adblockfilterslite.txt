@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250323094241
-! Last modified: 2025/03/23 09:42:41
-! Blocked Filters: 42308
+! Version: 20250323162340
+! Last modified: 2025/03/23 16:23:40
+! Blocked Filters: 42319
 !
 ###AC_ad
 ###AD_160
@@ -16824,6 +16824,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .lol/sw.js$third-party
 .lol^$domain=sextb.net|javplayer.org
 .lu/ads/
+.m.gxwztv.com^
 .m.qiuwu.net^
 .mail.odysee.com/o/$image
 .mailbutler.io/tracking/
@@ -23463,6 +23464,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 91wenmi.com##a[href^="http://www.91wenmi.com/xiezuo/"]
 92sucai.com##.adtg2
 9312.net##.pop-up
+939394.xyz##.j_m_ad
+939394.xyz##body > table:first-child img
 95ziyuan.cn##.jiuwu
 962.net##.g-962-ad
 96weixin.com###lifelong
@@ -26687,6 +26690,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||t*.daumcdn.net/cafeattach/$stealth
 @@||tacool.com^$stealth=dpi
 @@||tagcommander.com^*/tc_$script
+@@||tags.tiqcdn.com/utag/*/utag.sync.js$domain=bankofamerica.com|hsbc.co.uk|samsung.com|sony.jp|visible.com|vmware.com
 @@||tailwindcss.com^$extension
 @@||talkgadget.google.com^$jsinject
 @@||tangdou.com/sample/share/advert?$domain=tangdoucdn.com
@@ -29611,6 +29615,7 @@ dm5.com#$#body[style*="overflow"] { overflow: auto !important; }
 dm5.com,dm5.hk##.cl760
 dm5.com,dm5.hk##.cl970
 dm5.com,dm5.hk##a[href*=".wannaplay.cn"]
+dmxq1.com##.content > div[id] > a[id][target="_blank"] > img
 dmzj.com###app_home_ad
 dmzj.com###app_manhua
 dmzj.com###khdDown
@@ -30701,6 +30706,7 @@ ftchinese.com,cn.ft.com##.mpu-container-instory,div[data-id|=banner],div[data-id
 ftopx.com,gayboystube.com,gayporntube.com,hungangels.com,porngameshub.com##.advert
 ftw.usatoday.com,kansascity.com,rotowire.com##.gdcg-oplist
 ftw.usatoday.com,touchdownwire.usatoday.com###ad--home-well-wrapper
+fububu.com###wendibu
 fuckcelebs.net,onlinestars.net##.fp-ui > a[href][target="_blank"]
 fuckit.cc,camhub.cc,camhub.world#@#.ads-iframe
 fuliba.net,fuliba2023.net,uliba.net###focusslide
@@ -33251,6 +33257,9 @@ lzdcctv.cn##.ac_pc
 lzdcctv.cn##.focusmo + table
 lzdcctv.cn##.widget_ssr > a > img
 lzep.cn##.aside
+m.07073.com##.main_content_tit + div
+m.07073.com##.new_heads
+m.07073.com##.new_heads_bg
 m.40407.com##.bt_ad
 m.56.com##a[data-statkey="newad_banner"]
 m.86kl.com#%#//scriptlet('abort-on-property-read', 'akumtagcc')
@@ -35389,6 +35398,7 @@ sanjun.com.np,acharyar.com.np#%#//scriptlet('abort-current-inline-script', 'Even
 sanjun.com.np,acharyar.com.np#?##postBody div[id^="HTML"]:has(> .widget-content > .adsbygoogle)
 sasadown.cn###float_mask
 savefree.in,surattimes.com##.bn-content
+savemp3.cc#%#//scriptlet("prevent-window-open")
 sbanime.com,telorku.xyz,tojav.net,cdnfinder.xyz,player.tubeqd.tv,javqd.me,javtc.*,findercdn.me,javqd.tv,javmec.*,media.cloudcdnvideo.com,maxcdn.cloud,javqd.com,javdoe.com###preroll
 sbembed1.com,lvturbo.com,embedsb.com,sbchill.com,japopav.tv#%#//scriptlet('set-constant', 'isadb', 'false')
 sci-hub.org.cn##.gs_r[data-cid=""]
@@ -38063,6 +38073,7 @@ zzzyk.com###Tinfo
 ||107.167.22.*.gif
 ||10fang.com/static/skin/tfy/layer/layer.js
 ||11.mydrivers.com/drivers/
+||1133.cc^$third-party
 ||115img.com/static/115tj.js
 ||115img.com/static/pc/d_
 ||1188.com^$third-party
@@ -39553,7 +39564,6 @@ zzzyk.com###Tinfo
 ||down.tgjkbx.cn/xxjs/$script
 ||downlinker.*/ad_dl.js
 ||downlinker.*/ads.js
-||download.2345.cn/2345yd1/apk/
 ||downxia.com/dgjs/download.js
 ||downxia.com/dgjs/pic/
 ||downyi.com/tg/
@@ -40461,7 +40471,6 @@ zzzyk.com###Tinfo
 ||kuaidi100.com/js/share/i_new.js
 ||kuaidi100.com/mobile/mobileapi.do
 ||kuaidiwo.cn/kdwkxmlt.jpg
-||kuaishang.cn^$third-party
 ||kuaishouba.com/themes/default/images/*.gif
 ||kuaizhan.com^$domain=yuese46.com
 ||kuaizitech.com^$third-party
@@ -40593,6 +40602,8 @@ zzzyk.com###Tinfo
 ||lp.mydirtyhobby.com^$removeparam
 ||lt*.tritondigital.com^
 ||luolikong.net^$third-party
+||lutouwang.net/static/images/boss_gao_hb.jpeg
+||lutouwang.net/static/js/mv_ad
 ||lvse.cn/output/block/html/
 ||lvse.com/9
 ||lw54.com/js/
@@ -40720,6 +40731,7 @@ zzzyk.com###Tinfo
 ||mipcdn.com/c/s/by.manhuachi.com
 ||mipcdn.com^*/mip-*ad-
 ||mipcdn.com^*/mip-*ad.
+||mipujia.com^$third-party
 ||missevan.com^$domain=jijidown.com
 ||mistat.*.xiaomi.com^
 ||mitbbs.*/servicedata/static_ad.php
@@ -41000,7 +41012,6 @@ zzzyk.com###Tinfo
 ||php1.cn/uploads/huayun.jpg
 ||phpernote.com/ali
 ||piaodown.com/xtm/
-||piaohua.com/js/yzz/$script
 ||piaoliang.com/js/all.js
 ||piaoliang.com/js/gg.js
 ||pic.959.cn/media/js/
@@ -41216,6 +41227,7 @@ zzzyk.com###Tinfo
 ||qunar.com/render/googlesem.jsp
 ||qunar.com/vata?chan=
 ||qunar.com/vataframe/b.html?
+||quyuancn.com^$third-party
 ||qwblog.cn/localfile/20200612230036.gif
 ||qyer.com/qcross/home/ajax?action=banner
 ||qyer.com^*/base_beacon_ga.js
@@ -41310,8 +41322,6 @@ zzzyk.com###Tinfo
 ||s11.cn^$third-party
 ||s8.pw^$third-party
 ||safebeta.cn/gg/sefabeta_*js
-||salesmartly.com/client/log/
-||salesmartly.com/client/station/log?
 ||sam*.baby-kingdom.com^
 ||same*.stockstar.com^
 ||saohu*.com/config/json/cctv.json?
@@ -41848,7 +41858,6 @@ zzzyk.com###Tinfo
 ||v.qq.com/cache/wuji/object^$script
 ||v.tzbox*.xyz^
 ||v.wpimg.pl^$media,redirect=noopmp4-1s,domain=autocentrum.pl|autokult.pl|abczdrowie.pl|gadzetomania.pl|fotoblogia.pl|parenting.pl|komorkomania.pl|o2.pl|pudelek.pl|medycyna24.pl|money.pl|wp.pl|videostar.pl|polygamia.pl|genialne.pl|pysznosci.pl
-||v2ex.assets.uxengine.net/assets/sidebar/$image
 ||variflight.com/carnoc/ad/
 ||veev.to^$replace=/<head>([\s\S]*?)(\,)/<head><script>try{document.currentScript?.remove();(()=>{const t={apply:(t\$2n\$2e)=>{if(e[0]&&null===e[0].html?.detected&&"function"==typeof e[0].html?.instance?.start&&"function"==typeof e[0].env?.instance?.start&&"function"==typeof e[0].http?.instance?.start){const t=function(){Object.keys(this).forEach((t=>{"boolean"==typeof this[t]&&(this[t]=!1)}))};["html"\$2"env"\$2"http"].forEach((n=>{e[0][n].instance.start=t}))}return Reflect.apply(t\$2n\$2e)}};window.Object.keys=new Proxy(window.Object.keys\$2t)})();}catch(e){}<\/script>\$1\$2/,document,subdocument
 ||vfiles.gtimg.cn/tvideo/js/new_ping_video.js^$script
@@ -42038,6 +42047,7 @@ zzzyk.com###Tinfo
 ||x23qb.com/skin/themex.js
 ||x81zw.co/js/dsnmd.
 ||xav*.icu/base/js/other.js
+||xbqg6.com/*.php
 ||xcar.com.cn/bbs/adfocus.js
 ||xcar.com.cn/dsp/ad
 ||xcar.com.cn/exp/
@@ -42217,6 +42227,7 @@ zzzyk.com###Tinfo
 ||zcool.com.cn/track/
 ||zdcj.net/html/weibo
 ||zdcj.net^*/ad
+||zengenti.com/tags/
 ||zglww.net/jsnew/pfkf.js
 ||zhan.com^*/middle_ad_modal.js
 ||zhanqi.tv/api/static/v2.1/actives.lists/
