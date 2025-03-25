@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250325002719
-! Last modified: 2025/03/25 00:27:19
-! Blocked Filters: 42332
+! Version: 20250325093846
+! Last modified: 2025/03/25 09:38:46
+! Blocked Filters: 42331
 !
 ###AC_ad
 ###AD_160
@@ -20846,6 +20846,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /poppy^$script,domain=pornq.com|see.xxx
 /popu.js$script
 /popunder.$popup
+/popunder/in/click/*
 /popunder/in/click/*$popup
 /popunder1.js$script
 /popunder1000.js$script
@@ -27354,6 +27355,7 @@ amazon.*###sponsoredProducts2_feature_div
 amazon.*###sponsoredProducts_feature_div
 amazon.*###typ-recommendations-stripe-1
 amazon.*###typ-recommendations-stripe-2
+amazon.*##.AdsCard_container__K6vmo
 amazon.*##.amzn-safe-frame-container
 amazon.*##.dp-widget-card-deck:has([data-ad-placement-metadata])
 amazon.*##.s-result-item:has([data-ad-feedback])
@@ -28559,6 +28561,7 @@ brtn.cn,btime.com##.business-box
 brtn.cn,btime.com##.business-item
 brtn.cn,btime.com##.promo-item > a[href^="http"]:not([href*=".b"])
 brtn.cn,btime.com##.seed-item
+bs.cimanow.cc#@%#//scriptlet('abort-on-stack-trace', 'Image', '?v=')
 bsc.news,web3wire.news##.banner-one
 bt.cn##.left_wrap:nth-child(3)
 bt.cn,lotour.com##.btad
@@ -40794,10 +40797,6 @@ zzzyk.com###Tinfo
 ||msn.cn/resolver/api/resolve/$jsonprune=\$.configs['GalleryPage/ntpmsn'].properties.slideshowWCSettings.interstitialNativeAds
 ||msn.cn/resolver/api/resolve/$jsonprune=\$.configs['SlideShow/ntpmsn'].properties.additionalChildExperiences..children..childExperienceConfigInfo.configRef[?(key-substr '\$' 'NativeAd')]
 ||mssdk*.capcutapi.com^
-||mssdk*.tiktok.com^
-||mssdk*.tiktokv.eu^
-||mssdk*.tiktokv.us^
-||mssdk*.tiktokw.us^
 ||mssdk*.zijieapi.com^
 ||msstatic.com/huya/main/img/mc-recom_
 ||msstatic.com/huya/main3/assets/modules/CommercialAdSdk/$script
