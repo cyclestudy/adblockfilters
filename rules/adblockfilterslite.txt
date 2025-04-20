@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250420094625
-! Last modified: 2025/04/20 09:46:25
-! Blocked Filters: 42634
+! Version: 20250420162352
+! Last modified: 2025/04/20 16:23:52
+! Blocked Filters: 42627
 !
 ###AC_ad
 ###AD_160
@@ -15234,6 +15234,7 @@
 ##div[class^="module-"] > a[href="/index/voddetail.html?id=1"]
 ##div[class^="ps_"][value="20"]
 ##div[data-ad-placeholder]
+##div[data-ad-region]
 ##div[data-ad-targeting]
 ##div[data-ad-wrapper]
 ##div[data-adname]
@@ -26482,7 +26483,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pubscholar.cn/static/common/fingerprint.js$script,~third-party
 @@||pv.sohu.com/cityjson$domain=ems.com.cn
 @@||pv.sohu.com/suv/
-@@||pythonmatplotlibtips.blogspot.com^$generichide
 @@||qccommunity.qcloudimg.com^$stealth,domain=cloud.tencent.com
 @@||qianpanso.cn/other/*.js$domain=cilimao.co|cilimao.one
 @@||qidian.gtimg.com/*/qd/js/component/ad_strategies.$script
@@ -27698,6 +27698,7 @@ apartmenttherapy.com,cubbyathome.com,thekitchn.com##.StickyFooter
 apartmenttherapy.com,cubbyathome.com,thekitchn.com##.pov_recirc__ad
 apartmenttherapy.com,thekitchn.com,cubbyathome.com##.StickyBanner
 apexcharts.com,ar12gaming.com##.featured-sponsor
+api.savemedia.website###dlbutton > span[style="color:#fff"] + div[style]
 api.savemedia.website,ymp4.download#%#//scriptlet("prevent-window-open")
 api.so.lianmeng.360.cn,pos.baidu.com##body
 apiref.com,iodraw.com,matools.com###popAd
@@ -33712,6 +33713,7 @@ megaurl.in,megafly.in#%#//scriptlet("abort-current-inline-script", "document.get
 megaurl.in,megafly.in,aztravels.net,handydecor.com.vn,techacode.com,downfile.site,memangbau.com,trangchu.news#%#//scriptlet('prevent-window-open', '!/(megafly|megaurl)\.in/')
 meijutt.tv##.a960_index
 meilblog.com,doumura.com##.adblock_title
+meishij.net##.cp_body_right
 meitu.com###meipaiFixed
 meituan.com##.component-downtip
 meizhou.cn##.toptonglan
@@ -35827,6 +35829,13 @@ shtms.co,gitizle.vip,ay.live#%#//scriptlet('set-constant', 'popush', 'undefined'
 shurt.pw,uii.io,short.pe,clik.pw##div[style="z-index:99999;position:fixed;bottom:10px;left:50%;transform: translateX(-50%)"]
 sifted.eu,revolvy.com##div[id^="ad_slot_"]
 siivous.fi,zipextractor.app###cm
+silver.org.cn##.dl_lt
+silver.org.cn##.fix_bottom_position
+silver.org.cn##.fixbottom_wrap_small
+silver.org.cn##.logo_dsaas
+silver.org.cn##.zl_login
+silver.org.cn##div[class*="_gg"]
+silver.org.cn##div[class^="ads_"]
 sina.cn###float-btn.callApp_fl_btn
 sina.cn###j_gotop ~ .fl_suspension_template
 sina.cn###j_toTop ~ .fl_suspension_template
@@ -36487,17 +36496,6 @@ tastingtable.com,islands.com,grunge.com,slashgear.com,grunge.com,svg.com##.partn
 tastingtable.com,islands.com,grunge.com,slashgear.com,grunge.com,svg.com##.partnership-header + div.slide-key
 tastingtable.com,islands.com,grunge.com,slashgear.com,grunge.com,svg.com##.under-art > h2.section-header
 tatbiqat.store,nxbrew.net,nsw2u.*,tresdaos.com,galinhasamurai.com,tv.latinlucha.es,4horlover.com,richitt.com,mylivewallpapers.com#%#//scriptlet('abort-on-stack-trace', 'document.createElement', 'adsBlocked')
-taxidrivermovie.com###post-block > div > div.post:not([id^="post-"])
-taxidrivermovie.com###scroll-div
-taxidrivermovie.com##.adboard-top
-taxidrivermovie.com##.board-mini
-taxidrivermovie.com##.category-taxi-fares
-taxidrivermovie.com##.col-pfootban
-taxidrivermovie.com##.fares-heading
-taxidrivermovie.com##.sidebarban1
-taxidrivermovie.com##a[href*="/category/"]
-taxidrivermovie.com##a[href*="mrskin.com/"]
-taxidrivermovie.com#$#.category-taxi-fares-main { position: absolute!important; left: -3000px!important; }
 tbsradio.jp,talkwithstranger.com,cool-style.com.tw,forsal.pl,gazetaprawna.pl,heureka.cz,missyusa.com,pressian.com,issuya.com,eurointegration.com.ua,worldhistory.org,etnews.com,iusm.co.kr,lamire.jp,picrew.me,text-compare.com,etnewskorea.com,gadgets360.com,mydaily.co.kr,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,sportsrec.com,reportera.co.kr,tweaksforgeeks.com,fourfourtwo.co.kr,flatpanelshd.com,wfmz.com,videogamemods.com,jin115.com,hoyme.jp,blog.esuteru.com,blog.livedoor.jp,itainews.com$$script[onload="error-report.com"]
 te-it.com,gold-24.net,3rabsports.com#%#//scriptlet("set-constant", "getalladblocks", "noopFunc")
 teachthought.com,napeza.com,collegelearners.com###block-4
@@ -38981,7 +38979,6 @@ zzzyk.com###Tinfo
 ||amazonaws.com.cn/static-documents/marketing/uda_banner_
 ||an.yandex.
 ||ana*.inews24.com^
-||anacams.com/cdn/top.
 ||analytics*.carambo.la^
 ||analytics*.clickdimensions.com^
 ||analytics*.prezly.com^
@@ -39041,7 +39038,6 @@ zzzyk.com###Tinfo
 ||appanalysis*.banggood.com^
 ||appcdn01.xyz^$badfilter
 ||apple-*.le.com^
-||apple.com-*.live^
 ||apple886.com/subs/*.js
 ||applinzi.com^$domain=soyunpan.com
 ||appmifile.com/webfile/globalweb/stat/
@@ -39359,7 +39355,6 @@ zzzyk.com###Tinfo
 ||btwuji.com/jsj1/
 ||bubble*life$redirect=nooptext
 ||bunkr.*/magic/pure-magic-1.js
-||burpee.xyz^$third-party
 ||business.msstatic.com/advertiser/$image
 ||button.blogs.yandex.
 ||buy.pconline.com.cn/$script
@@ -41971,7 +41966,6 @@ zzzyk.com###Tinfo
 ||taobao.com^$popup,domain=dlkoo.com
 ||taobaocdn.com^$image,domain=cnblogs.com
 ||taoguba.com.cn/res/js/tgbgg/
-||taxidrivermovie.com^$~third-party,xmlhttprequest
 ||tb58.net/plugin.php?id=tb58_
 ||tbcdn.cn/mm/tanxssp-custom/sina_
 ||tblog-*.kgslb.com^
@@ -42416,7 +42410,6 @@ zzzyk.com###Tinfo
 ||xkzzz.com/zb_users/plugin/MoreLinks/MoreLinks.
 ||xlog*-*.tiktokv.com^
 ||xmindchina.
-||xmrc.com.cn/net/info/html/
 ||xn--*.xn--fiqs8s:
 ||xnimg.cn^*/liveinc/rightlive.js
 ||xnnews.com.cn/adgl/
