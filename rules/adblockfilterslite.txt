@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250423002647
-! Last modified: 2025/04/23 00:26:47
-! Blocked Filters: 42603
+! Version: 20250423094148
+! Last modified: 2025/04/23 09:41:48
+! Blocked Filters: 42604
 !
 ###AC_ad
 ###AD_160
@@ -7058,7 +7058,6 @@
 ##.ad_horizontal
 ##.ad_hover_href
 ##.ad_iframe2
-##.ad_image
 ##.ad_img
 ##.ad_imgae_150
 ##.ad_in_article
@@ -11483,7 +11482,6 @@
 ##.imagegg-container
 ##.img-advert
 ##.imgBox > div[class^="ad"]
-##.img_ad
 ##.img_ads
 ##.imgad
 ##.in-article-ad
@@ -30337,6 +30335,7 @@ eurosport.*,play.typeracer.com,slant.co##.AdContainer
 eurosport.tvn24.pl,eurosport.com##.d3-side-advert
 eurosport.tvn24.pl,eurosport.com##.d3-top-advert
 euroxxx.net,korall.xyz,player.unlimitedfiles.xyz#%#//scriptlet("set-constant", "BetterJsPop.add", "noopFunc")
+evaki.fun,sportnews.to###adblock-overlay
 evaki.fun,sportnews.to#$#body > * { filter: none !important; }
 evaki.fun,sportnews.to#$#body > div[class*=" active"][style] + div[class]:has(> .active > [class*="-content"]) { display: none !important; }
 evaki.fun,sportnews.to#$#body > div[class*=" active"][style] { display: none !important; }
@@ -38060,6 +38059,8 @@ yxlady.com##.left_bottom_gg3
 yxzp.net##img[width="770"]
 yy.com###rbappend
 yycast.com,webcaston.com$$div[id="adsdiv"]
+yydstxt*.com/js/cdn.
+yydstxt*.com/js/html
 yyrtv.com##.right-gg
 yyrtv.com##li[class*="baidu"]
 yzz.cn###video_ff
