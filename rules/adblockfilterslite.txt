@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250513002804
-! Last modified: 2025/05/13 00:28:04
-! Blocked Filters: 42808
+! Version: 20250513094549
+! Last modified: 2025/05/13 09:45:49
+! Blocked Filters: 42811
 !
 ###AC_ad
 ###AD_160
@@ -16838,6 +16838,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .html?android=hx*&_$csp=script-src
 .html?clicktag=
 .html|$domain=www.gamer.com.tw
+.hur0*kns.com/$script,third-party
 .icu/*?zoneid=*&visitor_id=$all
 .icu/*_*_*.js$third-party
 .icu/*_*_rony.js
@@ -21629,6 +21630,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /stat/event?
 /stat/fe?
 /stat/rt/js?
+/stat/stat.php?type=
 /stat2.aspx?
 /stat2.js
 /stat?SiteID=
@@ -21673,6 +21675,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /statics/js/hth1111.html
 /statics/recommend/bense.gif
 /statistic/pixel?
+/statistiche/stat.php$xmlhttprequest
 /statistics.js?$third-party
 /statistics/pixel/*
 /statistics/visit?id=
@@ -30486,14 +30489,14 @@ eurosport.*,play.typeracer.com,slant.co##.AdContainer
 eurosport.tvn24.pl,eurosport.com##.d3-side-advert
 eurosport.tvn24.pl,eurosport.com##.d3-top-advert
 euroxxx.net,korall.xyz,player.unlimitedfiles.xyz#%#//scriptlet("set-constant", "BetterJsPop.add", "noopFunc")
-evaki.fun,sportnews.to###adblock-overlay
-evaki.fun,sportnews.to##body > div[id]:has(> .keep-lightbox)
-evaki.fun,sportnews.to##body > div[style*="position: fixed; top:"][style*="z-index:"]
-evaki.fun,sportnews.to#$#body > * { filter: none !important; }
-evaki.fun,sportnews.to#$#body > div[class*=" active"][style] + div[class]:has(> .active > [class*="-content"]) { display: none !important; }
-evaki.fun,sportnews.to#$#body > div[class*=" active"][style] { display: none !important; }
-evaki.fun,sportnews.to#%#//scriptlet('abort-current-inline-script', 'document.getElementsByTagName', '$$$')
-evaki.fun,sportnews.to#%#//scriptlet('prevent-fetch', 'adsbygoogle.js')
+evaki.fun,sportshub.to,sportnews.to###adblock-overlay
+evaki.fun,sportshub.to,sportnews.to##body > div[id]:has(> .keep-lightbox)
+evaki.fun,sportshub.to,sportnews.to##body > div[style*="position: fixed; top:"][style*="z-index:"]
+evaki.fun,sportshub.to,sportnews.to#$#body > * { filter: none !important; }
+evaki.fun,sportshub.to,sportnews.to#$#body > div[class*=" active"][style] + div[class]:has(> .active > [class*="-content"]) { display: none !important; }
+evaki.fun,sportshub.to,sportnews.to#$#body > div[class*=" active"][style] { display: none !important; }
+evaki.fun,sportshub.to,sportnews.to#%#//scriptlet('abort-current-inline-script', 'document.getElementsByTagName', '$$$')
+evaki.fun,sportshub.to,sportnews.to#%#//scriptlet('prevent-fetch', 'adsbygoogle.js')
 evaki.fun,sportshub.to,sportnews.to#%#//scriptlet('trusted-suppress-native-method', 'DOMTokenList.prototype.add', '"-"')
 event.kingstream.live,play.kingstream.live,en.ripplestream4u.online,watch.soccerloverss.live##.featured-post.section
 evertiq.com,mediamanager.co.za##.bnr
