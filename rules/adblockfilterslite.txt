@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250616002459
-! Last modified: 2025/06/16 00:24:59
-! Blocked Filters: 42707
+! Version: 20250616095223
+! Last modified: 2025/06/16 09:52:23
+! Blocked Filters: 42708
 !
 ###AC_ad
 ###AD_160
@@ -22115,6 +22115,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /tracking?referrer
 /tracking?vs=
 /trackingApi?type=
+/trackingClient.bundle.js
 /trackingCode-
 /trackingCode.js
 /trackingDTM.js
@@ -28957,8 +28958,7 @@ cctv.com##.anime_ewm
 cctv.com,douyin.com,douyu.com##+js(aeld,/visibilitychange|pagehide/)
 cdkeyit.it,allkeyshop.com##body > a[class^="blc-"]
 cdkeyit.it,allkeyshop.com#$#body { background-image: none!important; }
-cdmediaworld.com,cryptofeeds.news,fxempire.com,gametarget.net,lnkworld.com,power987.co.za##[height="600"]
-cdmediaworld.com,flashx.cc,flashx.co,forum.gsmhosting.com,gametarget.net,jeepforum.com,lnkworld.com,themediaonline.co.za,topprepperwebsites.com##[width="468"]
+cdmediaworld.com,flashx.cc,flashx.co,forum.gsmhosting.com,gametarget.net,jeepforum.com,lnkworld.com,themediaonline.co.za,topprepperwebsites.com,transdict.com##[width="468"]
 cdmediaworld.com,gametarget.net,lnkworld.com##.chk
 cdn.ampproject.org,linguee.com,thesuburban.com###banner_top
 cdn.braun634.com^$third-party
@@ -39890,6 +39890,7 @@ zzzyk.com###Tinfo
 ||dj97.com/api.php?mod=ad&
 ||djicdn.com/uploads/ad_image_file/
 ||djljz.cn/Plugins/Template/XJLY/js/app.
+||djpunjab.*/ads/
 ||dl.gamecopyworld.*/aa/ii/kgn/$domain=gamecopyworld.*
 ||dl.lk21static.*/iframe/content.php
 ||dm*.yxlady.com^
