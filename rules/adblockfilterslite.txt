@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250708002924
-! Last modified: 2025/07/08 00:29:24
-! Blocked Filters: 42533
+! Version: 20250708095027
+! Last modified: 2025/07/08 09:50:27
+! Blocked Filters: 42535
 !
 ###AC_ad
 ###AD_160
@@ -21882,6 +21882,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /tag.min.js$script,redirect=noopjs,domain=vipleague.tv,important
 /tag/proxy?id=G-
 /tag/tag.jsp?
+/tag?name=PageView$xmlhttprequest
 /tag?tags=
 /tagAnalyticscnil.php
 /tagCNIL.js
@@ -23890,6 +23891,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://sli.*/imp?s=$image
 ://sportframe*.co^
 ://sportframe*.org^
+://stat.*/pageview/$xmlhttprequest
 ://stats.*/code/e.js
 ://t.order.*/r/?id=$image
 ://t.targito.
@@ -38946,8 +38948,8 @@ zzzyk.com###Tinfo
 ||api-*.hismarttv.com^
 ||api-v*.soundcloud.com/audio-ads?
 ||api.*.hismarttv.com^
+||api.bilibili.com/x/*/res/locs?$~script
 ||api.bilibili.com/x/ad/
-||api.bilibili.com/x/web-show/res/locs?$~script
 ||api.ea3w.com/hits.js
 ||api.live.bilibili.com/*/Banner
 ||api.mixpanel.com^$app=com.viber.osx
