@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250715163134
-! Last modified: 2025/07/15 16:31:34
-! Blocked Filters: 42454
+! Version: 20250716003000
+! Last modified: 2025/07/16 00:30:00
+! Blocked Filters: 42457
 !
 ###AC_ad
 ###AD_160
@@ -20233,7 +20233,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /js/wlfloat.js
 /js/yueyupp_3.js
 /js/yzgg.js
-/jsAds-1.4.min.js$script
+/jsAds-1.4.min.js
 /js_ibeat_ext.cms
 /js_log_error.js
 /js_logger.php
@@ -30321,6 +30321,9 @@ ewrc-results.com$$script:contains(document.addEventListener('click')
 ewrc-results.com,ewrc-models.com#@#.cardAd
 exam58.com##div[style="float: none;  width: 305px; height: 254px; text-align: center"]
 examscisco.com,dudestream.com,syswoody.com,51sec.org,freemen.jp##.ta_upscr + div[id][class*=" "]
+examsnews.com,mhfragristack.in#$##myNextInst { display: block !important; }
+examsnews.com,mhfragristack.in#$?##VerifyBtn { display: block !important; }
+examsnews.com,mhfragristack.in#%#//scriptlet('set-constant', 'document.hidden', 'false')
 examw.com###kefu_in
 examw.com##.acitvieLeftBox
 examw.com##.activeBottomBox
