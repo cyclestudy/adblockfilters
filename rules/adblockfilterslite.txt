@@ -3,8 +3,8 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250826002754
-! Last modified: 2025/08/26 00:27:54
+! Version: 20250826094348
+! Last modified: 2025/08/26 09:43:48
 ! Blocked Filters: 42657
 !
 ###AC_ad
@@ -1409,7 +1409,6 @@
 ###adsZone
 ###adsZone1
 ###adsZone2
-###ads[style^="position: absolute; z-index: 30; width: 100%; height"]
 ###ads_0_container
 ###ads_160
 ###ads_3
@@ -16625,7 +16624,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .com/aS/feedclick?s=$all,match-case
 .com/a_d/
 .com/ablck/250-300/
-.com/ad/$~image,third-party,domain=~mediaplex.com|~warpwire.com|~wsj.com
+.com/ad/$~image,third-party,domain=~espn.com|~mediaplex.com|~warpwire.com|~wsj.com
 .com/ad/$~image,third-party,domain=~mediaplex.com|~warpwire.com|~wsj.com,badfilter
 .com/ad_js/
 .com/ads/$domain=hdbraze.com
@@ -33140,6 +33139,7 @@ lanazione.it,ilgiorno.it,ilrestodelcarlino.it,quotidiano.net##div[class*=" amp__
 landiannews.com###block-2
 landiannews.com##.sidebar > section#block-4
 landiannews.com##a[href*="ourl.co"]
+landiannews.com##article > .content-gg > a[target="_blank"][rel="nofollow"]
 landiannews.com##section[id^="media_image"]
 langitfilm.*##.rkads
 lankasri.com,manithan.com,colourlovers.com$$script[tag-content="if(window.TextDecoder)return(new window.TextDecoder(""utf-8"")).decode("][max-length="30000"]
