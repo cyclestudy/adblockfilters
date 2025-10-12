@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251012094103
-! Last modified: 2025/10/12 09:41:03
-! Blocked Filters: 42517
+! Version: 20251012162419
+! Last modified: 2025/10/12 16:24:19
+! Blocked Filters: 42572
 !
 ###AC_ad
 ###AD_160
@@ -23484,6 +23484,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 9game.cn###btInfo
 9game.cn##.guide-app-fix
 9hentai.*#%#//scriptlet("prevent-addEventListener", "click", "flashElement")
+9ht.com##a[href*=".360.cn/"]
 9ht.com,cesafe.com,downcc.com,downyi.com,paopaoche.net,pc0359.cn,pc6.com###gaosuxiazai
 9ht.com,pc0359.cn,pc6.com##.downnow
 9jaflaver.com,alaskapublic.org,allkeyshop.com,analyticsinsight.net,ancient-origins.net,animeidhentai.com,arabtimesonline.com,biblestudytools.com,bitcoinworld.co.in,christianity.com,cnx-software.com,coingolive.com,csstats.gg,digitallydownloaded.net,digitbin.com,domaingang.com,downturk.net,flickeringmyth.com,fresherslive.com,gizmochina.com,glitched.online,glodls.to,guidedhacking.com,hackernoon.com,indishare.org,katfile.com,khmertimeskh.com,litecoin-faucet.com,mbauniverse.com,mediaite.com,mgnetu.com,myreadingmanga.info,newsfirst.lk,owaahh.com,parkablogs.com,premiumtimesng.com,railcolornews.com,resultuniraj.co.in,ripplesnigeria.com,rtvonline.com,ryuugames.com,sashares.co.za,sofascore.com,timesuganda.com,totemtattoo.com,trancentral.tv,unboxdiaries.com,vumafm.co.za,yugatech.com,zmescience.com##[href*="bit.ly/"]
@@ -24412,6 +24413,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||adservice.google.com/adsid/integrator.js$domain=ultimateclassicrock.com
 @@||adservice.google.com/adsid/integrator.js?domain=www.cbs.com$domain=cbs.com
 @@||adv.*.ch^$xmlhttprequest,other,script,domain=tio.ch
+@@||advertising.yahoo.com/favicon.ico
+@@||advertising.yahoo.com^$~third-party
 @@||adx.yiche.com/cityindex.ashx
 @@||adx.yiche.com/ssp/echo/v1.0/en?*,*,*&cs=
 @@||ahcdn.com^$media
@@ -24702,7 +24705,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||egybest.*^$stealth=referrer
 @@||email.*.skyeng.ru^|
 @@||emathhelp.net^$csp
-@@||ens.nzz.ch^$~third-party
 @@||eolinker.com^$generichide
 @@||epubit.com/static/epubit/share/js/share.min.js
 @@||eu4cn.com^$generichide
@@ -25366,8 +25368,10 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||libs.baidu.com^$domain=11bqg.com|xbotaodz.com|0794.org|12zw.net|1biqu.com|1kans.net|23hh.com|23sk.net|23wxx.com|3yt.com|4xiaoshuo.net|56shuku.info|777zw.net|81book.com|99mk.net|aiwx.info|aixs.la|aikushuge.com|bequmo.com|bimixsw.com|biqivge.cc|biqudu.tv|biquge775.com|biquge98.net|biqugecd.com|biquka.com|aidu123.com|biqutsxs.com|bshuku.com|bxwx.live|bxwx.org|damengzhu1.com|gdbzkz.info|hongyeshuzhai.com|ibiquges.com|ibiquges.org|ibotaodz.org|imianhuatang.info|ishisetianxia.com|ishubao.org|xvipxs.net|iwurexs.info|ixs.la|lewenge.cc|liewenn.com|liudatxt.org|paoshu8.com|paoshuzw.com|pksge.com|qishuta.info|shu008.com|shumil.co|silukex.com|siluwx.org|sthuojia.org|tutengzw.com|u33.cc|wenxuem.com|xbiquke.com|xdingdian.cc|xiaxs.info|xs5200.com|xszww8.net|xuanshu.org|xuessex.com|yqd6.com|yunxs.info|zjsw.org|zzs5.info
 @@||libs.baidu.com^$domain=m.supfree.net
 @@||link1s.*^$stealth=referrer
+@@||linkedin.com/inbox/compose/dialog$document
 @@||liulanmi.com/wp-content/uploads/*/StatCounter-
 @@||liumingye.cn^$generichide
+@@||live90m.blogspot.com^$generichide
 @@||livew.l.qq.com/livemsg?pf=H5&ad$domain=m.v.qq.com
 @@||lmjvideocdn.*-cdn.net/*.mp4?hash=$stealth=referrer,domain=letmejerk.com
 @@||logicool.co.jp^$content
@@ -26607,7 +26611,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||static.doubleclick.net^$xmlhttprequest,domain=sgxnifty.org|comexlive.org|dowfutures.org
 @@||static.hdslb.com/ad-images/$image
 @@||static.mediav.com/js/feed_ts.js$domain=jianshu.com
-@@||static.realme.net/v1/knowledge/images/banner.jpg$image
 @@||static.vrv.co^$media,domain=crunchyroll.com
 @@||static.zhihu.com/ad-raccoon-web/$script
 @@||statics.zcool.com.cn/track/sensors.$script,~third-party
@@ -27189,6 +27192,8 @@ airplaydirect.com,zeirishi-web.com#@##header_ad
 airportinfo.live,audiokarma.org,audizine.com##.AdvallyTag
 aishoujizy.com###ShouYe_ShangBu > .HtmlMoKua:first-child
 aishoujizy.com##a[target="_blank"] > img[src^="/upload/1/"]
+aiweibk.com##.lili
+aiweibk.com##.pc
 aiyuke.com###Playerpad
 aiyuke.com###js-ad-type4
 aiyuke.com##.GGad
@@ -28916,6 +28921,11 @@ chinaz.com##.txtAdBox
 chinaz.com##div[style^="width:300px;height:250px;"]
 chinaz.com,mydrivers.com,oschina.net##a[href*="click.aliyun.com"]
 chinaz.com,ofweek.com,yawin.cn##.adtext
+chineseinla.com###weixin_ads2
+chineseinla.com##.deal_discount
+chineseinla.com##.forum_banner_ads
+chineseinla.com##.text-ads-col
+chineseinla.com##div[style^="position:absolute;"][style$=":0px;top:30px;"]
 chiphell.com###diy2 + div
 chjtx.com,fooish.com###ad
 chongdiantou.com##.nice-sales
@@ -30659,6 +30669,7 @@ francaisfacile.net,o-pro.online,leechyscripts.com,killdhack.com,rarovhs.com,jpop
 frdic.com,godic.net##a[onclick*="/ads/"]
 freeaddresscheck.com,freecallerlookup.com,freecarrierlookup.com,freeemailvalidator.com,freegenderlookup.com,freeiplookup.com,freephonevalidator.com###offers
 freeaddresscheck.com,freecallerlookup.com,freecarrierlookup.com,freeemailvalidator.com,freegenderlookup.com,freeiplookup.com,freephonevalidator.com,kpopping.com,zimbabwesituation.com##.advertise
+freebeacon.com##.inline-campaign-wrapper
 freebitcoin.win$$script[wildcard="*popunder_moon_ads*adblock*"][max-length="500"]
 freebusinessapps.net,freefinancetools.net##.sp
 freecodecamp.cn,freecodecamp.one#@#.btn-social
@@ -30754,13 +30765,6 @@ fzmovies.*#%#//scriptlet("abort-current-inline-script", "confirm", "Download the
 fzmovies.*#%#//scriptlet("prevent-window-open")
 g-mh.org,godamh.com##.adshow
 g-years.com,ghoffice.cc,gpsuu.com,mydigit.cn###main > .textMes
-gab.com##.sticky-inner-wrapper > div > a[href^="https://grow.gab.com/go/"]
-gab.com##[aria-label*="Sponsored:"]
-gab.com##[data-comment="gab-ad-comment"]
-gab.com##a[rel="noopener"][target="_blank"][href^="https://grow.gab.com/go/"]
-gab.com##article[data-id^="gab-ad-status-timeline-injection-"]
-gab.com##article[data-id^="promotion-"]
-gab.com#?#main .sticky-outer-wrapper > .sticky-inner-wrapper > div[class] > aside[class^="_"]:has(> div[class^="_"] > div[class^="_"] > div[class^="_"] > h2:contains(/^Sponsored$/))
 gadgethacks.com,reality.news,wonderhowto.com##.whtaph
 gadgets360.com,gadgets.ndtv.com###__kpw_prodt_rhs
 gadgets360.com,gadgets.ndtv.com##.lhs_top_banner
@@ -31422,6 +31426,22 @@ hentaiprn.com,kaplog.com##.Thumbnail_List > .aft_bnr
 hentaiprn.com,kaplog.com##.Thumbnail_List > .xtact
 hentaiprn.com,whipp3d.com##.widget_block
 hentaivideos.net,freehentaistream.com##.aside-banner
+hentaiworld.tv###floating-banner
+hentaiworld.tv###imagead
+hentaiworld.tv##.buton-main-link
+hentaiworld.tv##.card-container:not([href^="https://hentaiworld.tv"])
+hentaiworld.tv##.comments-banners
+hentaiworld.tv##.entry-content > div.section-slider + p > br
+hentaiworld.tv##.floating-banner
+hentaiworld.tv##.footer-banners-iframe
+hentaiworld.tv##.secondary-nav
+hentaiworld.tv##.support-ad
+hentaiworld.tv##a[href^="https://hotplay-games.life/"]
+hentaiworld.tv##a[href^="https://landing."]
+hentaiworld.tv##div[style="max-width:728px; margin: 0 auto"]
+hentaiworld.tv#%#//scriptlet("prevent-window-open", "hyenadata")
+hentaiworld.tv#?#.entry-content > div.section-slider:has(> div > h3:contains(Special Offers))
+hentaiworld.tv#?#.swiper-slide:has(> a[target="_blank"])
 hepan.com##.fivead
 hepuwang.com##.n5_dbhfad > .wapper
 hepuwang.com##a[href^="http://ad."]
@@ -31458,7 +31478,6 @@ hh010.com##.a_hong_t
 hh3dhay.xyz,animesanka.*,witanime.com,pouvideo.cc,manga18fx.com,milfnut.com##body ~ iframe[style*="width:"][style*="z-index:"][style*="position:"]:not([src])
 hianime.*,aniwatchtv.to##div[style*="text-align: center"] > a[target="_blank"] > img
 hianimez.*,hianime.*#%#//scriptlet('prevent-addEventListener', 'pointerdown')
-hibox.hinet.net#@#.adarea
 hiclipart.com#$?#.list_ads { remove: true; }
 hidden4fun.com,coursesity.com,ichacha.net,website.informer.com,mrexcel.com,blockadblock.com#?#.adsbygoogle:upward(1)
 hifidiy.net###part_left2
@@ -32731,6 +32750,7 @@ kansascity.com,idahostatesman.com###ConnatixVideoAd
 kansascity.com,orlandosentinel.com##.s2nPlayer
 kaoruhana.com,marinetraffic.live,governmentjobvacancies.com,biharkhabar.co,resizepixel.com,tradingeconomics.com,netronline.com,linuxcapable.com,inc.com,businessday.ng,the-crossword-solver.com,crosswordsolver.com,greatbritishchefs.com,halotracker.com,wowdb.com,futbin.com,foxweather.com,tikmate.app,mixed-news.com,rome2rio.com,ubackup.com,southparkstudios.com,theglobeandmail.com,globalnews.ca,infoworld.com,worldsoccertalk.com,minecraftforum.net,snipboard.io,pics-x.com,recyclingtoday.com,battlefieldtracker.com,destinytracker.com,tracker.network,tracker.gg,jamesbachini.com,grammarbook.com,punchng.com,one-off.email,all3dp.com,mangafarm.com,mangajar.com,deeeep.io,raaaaft.io,trustedreviews.com,obsev.com,gfinityesports.com,reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,dvbtmap.eu,infinityfree.net,ibtimes.co.uk,amp-businessinsider-com.cdn.ampproject.org,deviantart.com,usatoday.com,link.postearn.io##.ad-container:not(#style_important)
 kaoyan.com##.floatQrcode
+kaoyan1v1.com###showAD
 kaskus.co.id,kaskus.com###BannerAts
 kaskus.co.id,kaskus.com###BannerBwh
 kaskus.co.id,kaskus.com###Conho01Left
@@ -33057,7 +33077,6 @@ leporno.org/english.js
 leroymerlin.*##li[data-product-list-id*="sponsored"]
 lesbian8.com,sortporn.com,bigtitslust.com##.mitaru
 lesbianbliss.com,mywebcamsluts.com,transhero.com##.media_spot
-lesboluvin.com#%#//scriptlet("abort-on-property-read", "iamout")
 leslez.com,goodpornvids.com##.mi-links
 letemsvetemapplem.eu,webdesignledger.com#$#body { overflow: auto !important; }
 letemsvetemapplem.eu,webdesignledger.com#%#(()=>{const e={apply:(e,l,o)=>"link"===o[0]||"style"===o[0]?[]:Reflect.apply(e,l,o)};window.document.querySelectorAll=new Proxy(window.document.querySelectorAll,e)})();
@@ -33139,6 +33158,26 @@ link.vipurl.in,bhram.hydtech.in##.adb
 link1s.*###baolink1s
 link1s.com,azsoft.*,downfile.site#%#//scriptlet("abort-current-inline-script", "document.getElementById", "style.display")
 linkdrop.net$@$script[tag-content="absda"]
+linkedin.com##.ad-banner-container
+linkedin.com##.feed-container > .feed-item > article[data-is-sponsored]
+linkedin.com##.feeds > ol#feed-container > li[data-sponsored-sequence-number]
+linkedin.com##.go-premium
+linkedin.com##.jserp-ad-container
+linkedin.com##.premium-search-upsell
+linkedin.com##.scaffold-finite-scroll__content > div > div[data-id^="urn:li:activity:"]:has(.update-components-text-view > span[aria-hidden="true"]):not(:has(li-icon > svg))
+linkedin.com##article[data-is-sponsored]
+linkedin.com##iframe[componentkey="MynetworkDesktopNav_mynetwork_desktop_nav_ad"]
+linkedin.com##iframe[title="Advertisement"]
+linkedin.com##iframe[title="advertisement"]
+linkedin.com##li[data-is-sponsored="true"]
+linkedin.com#$#.ad-banner-container.is-header-zone { padding: 0 0 !important; }
+linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__description span:-abp-contains(/促銷內容|广告/))
+linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__sub-description span:-abp-contains(/促銷內容|广告/))
+linkedin.com#?#.feed-shared-update-v2:has(.update-components-actor__sub-description:contains(/Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|الترويج/))
+linkedin.com#?#.msg-overlay-list-bubble__conversations-list:-abp-contains(Sponsored)
+linkedin.com#?#div.feed-shared-update-v2:-abp-has(span.update-components-actor__description:-abp-contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/))
+linkedin.com#?#div.feed-shared-update-v2:-abp-has(span.update-components-actor__sub-description--tla:-abp-contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/))
+linkedin.com#?#div.feed-shared-update-v2:-abp-has(span.update-components-actor__sub-description:-abp-contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/))
 linkvertise.download,linkvertise.com###headerTopAd .ad-dp1-wrapper
 linovelib.com#$##byspider { display: none !important; }
 linovelib.com#$##mlfy_main_text > div[class]:not([id]) { display: none !important; }
@@ -34593,6 +34632,14 @@ pepper.com,pepper.pl##.listLayout-box:has(> .ad:only-child)
 perfectgirls.net,xnostars.com##.promo
 perfectgirls.xxx,hentaihaven.xxx,hentai.tv,animeidhentai.com,hanime.tv##iframe[src^="https://a.adtng.com/"]
 perfektdamen.*,perfectgirls.*,pornhat.*,desipapa.tv,pornteentube.tv##.bns-bl
+pervclips.com###after-adv
+pervclips.com###under-video
+pervclips.com##.advertising-player
+pervclips.com##.block.top-thumbs > .aside
+pervclips.com##.player_adv
+pervclips.com##.spot-after
+pervclips.com#%#//scriptlet("abort-on-property-read", "customScript")
+pervclips.com#?#.cut_block > .block > .heading > h2:contains(Ad)
 pervclips.com,alphaporno.com,pornwhite.com##.advertising-side
 pervclips.com,pornicom.com##.thumb_spots
 pervclips.com,pornwhite.com##.player_adv
@@ -35586,8 +35633,6 @@ sextb.date,sextb.net#$#body .sextb_728:not([id]) { position: absolute !important
 sextb.date,sextb.net#%#//scriptlet('set-constant', 'Check_ADBL', 'falseFunc')
 sextb.date,sextb.net#%#//scriptlet('spoof-css', '.sextb_300', 'display', 'block')
 sextb.date,sextb.net#%#//scriptlet('spoof-css', 'body .sextb_700', 'display', 'block')
-sextvx.com###porntube_hor_bottom_ads
-sextvx.com#%#//scriptlet("prevent-setTimeout", "window.location.href=link")
 sexu.*##.player-block__line
 sexu.*##.player__line
 sexu.*##.player__side.player-related
@@ -36654,6 +36699,14 @@ timesofindia.com,indiatimes.com##div[data-aff-type]
 timesofindia.com,indiatimes.com##div[data-articlebody] [data-card="readAlso"]
 timesofindia.com,indiatimes.com##div[data-articlebody] div.mgid_second_mrec_parent:has(> div[id^="v-timesofindia-indiatimes"])
 timesofindia.com,indiatimes.com#?#div:has(> div[data-type="in_view"] > div.ctn-workaround-div)
+tineye.com##.collection.match-row
+tineye.com##.no-results > .col-lg-4.text-center > a[href][target="_top"] > img
+tineye.com##.no-results > .sidebar.bottom > .promo
+tineye.com##.no-results > .sidebar.bottom > .promo + .stock-label
+tineye.com##.no-results > .sidebar.bottom > .promo + .stock-label + .similar_matches
+tineye.com##.no-results > .sidebar.bottom > a[href*="?sharedid=banner_"] > img
+tineye.com##.shutterstock-similar-images
+tineye.com#?#.no-results > .sidebar.bottom > .promo:upward(1)
 ting89.com,tingshuge.com##.banner250
 ting89.com,tingshuge.com##.banner688_1
 ting89.com,tingshuge.com##.banner688_2
@@ -37676,14 +37729,6 @@ xbooru.com,xxxymovies.com###smb
 xcar.com.cn###eMeng
 xcar.com.cn###show_car
 xcar.com.cn##div[class^="adset"]
-xchina.co##.outer-banner
-xchina.co##.photos > div.item:has(> div > a[target="_blank"])
-xchina.co##.photos > div.item:has(> div[class^="exoclick_"])
-xchina.co##.push-top
-xchina.co##div:has(> div:only-child > .media img[src*="/ad/"])
-xchina.co##div[class^="item photo zone"]
-xchina.co##div[style*="width: 300px;"][style*="height: 455px;"]
-xchina.co#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'check')
 xdf.cn##.footadv
 xdf.cn##.middleadv
 xdf.cn##.popup-wrap
@@ -37774,8 +37819,6 @@ xsharings.com,starwank.com,pimpandhost.com,my18pussy.com,18pussy.porn,thisvid.co
 xstream.top,play.seriesgod.com,videocdnal24.xyz,zarato.top,gayvidsclub.com,pokemonlaserielatino.xyz,stbpnetu.xyz,asdasd1231238das.site,filmcdn.top,vpge.link,opuxa.lat,troncha.lol,player.igay69.com,xtapes.to,player.streaming-integrale.com,vapley.top,cinecalidad.vip,fsohd.pro,vzlinks.com,younetu.org,diziturk.club,1069jp.com,gledajvideo.top,peliculas8k.com,cuevana.*,cuevana3.*,koreanbj.club,vaav.top,multiup.us,hqq.tv#%#//scriptlet('set-constant', 'WebSocket', 'undefined')
 xstream.top,play.seriesgod.com,videocdnal24.xyz,zarato.top,gayvidsclub.com,pokemonlaserielatino.xyz,stbpnetu.xyz,asdasd1231238das.site,filmcdn.top,vpge.link,opuxa.lat,troncha.lol,player.igay69.com,xtapes.to,player.streaming-integrale.com,vapley.top,cinecalidad.vip,fsohd.pro,vzlinks.com,younetu.org,diziturk.club,1069jp.com,gledajvideo.top,younetu.*,video.q34r.org,porntoday.ws,netuplayer.top,netu.ac,hqq.to,hqq.ac,speedporn.net,meucdn.vip,yandexcdn.com,waaw1.tv,waaw.*,hqq.tv#%#//scriptlet("set-constant", "adblockcheck", "false")
 xstream.top,play.seriesgod.com,videocdnal24.xyz,zarato.top,gayvidsclub.com,pokemonlaserielatino.xyz,vipboxi.net,stbpnetu.xyz,asdasd1231238das.site,filmcdn.top,vpge.link,opuxa.lat,troncha.lol,player.igay69.com,xtapes.to,player.streaming-integrale.com,vapley.top,cinecalidad.vip,fsohd.pro,vzlinks.com,younetu.org,diziturk.club,1069jp.com,gledajvideo.top,video.q34r.org,porntoday.ws,netuplayer.top,netu.ac,peliculas8k.com,hqq.ac,ekino-tv.link,nu6i-bg-net.com,yalapwl.xyz,xxxbestsites.com,xkeezmovies.com,cuevana.*,cuevana3.*,monstream.org,koreanbj.club,streaming-french.net,ytms.one,vaav.top,illimite-streaming.com,gratflix.org,multiup.us,netu.fshd.link,oyohd.one,xxvideoss.net,kitraskimisi.com,waaw1.tv,pajalusta.club,streamzz.*,xtapes.to,moovies.in,richhioon.eu,haes.tech,netu.in,vizplay.*,view47.*,streamplusvip.*,oyohd.com,hindilinks4uto.com,vidxhot.net,waaw.*,justswallows.com,meucdn.vip,yandexcdn.com,firstr0w.eu,hqq.*,streamz.*,3movs.com,alltube.tv,eporner.com,vivatube.com,verystream.com,ashemale.one,kaotic.com,alltube.pl#%#//scriptlet("abort-on-property-read", "BetterJsPop")
-xtapes.to##a[href="https://streamwish.com/"] > img
-xtapes.to#%#//scriptlet("abort-current-inline-script", "jQuery", "pop_init")
 xtits.com,tubepornclassic.com##.adv-title
 xtits.com,xtits.xxx##.re-under-player
 xueqiu.com##.ad-right-aside
@@ -37855,8 +37898,6 @@ yfsp.tv,aiyifan.tv,iyf.tv#$#.bg-overlayer { pointer-events: unset !important; }
 yfsp.tv,aiyifan.tv,iyf.tv#%#//scriptlet('abort-on-property-read', 'Object.prototype.ShouldLoadAds')
 yfsp.tv,aiyifan.tv,iyf.tv#%#//scriptlet('abort-on-stack-trace', 'Object.prototype.pgmp', 'invokeInterstitial')
 yfsp.tv,aiyifan.tv,iyf.tv#%#//scriptlet('remove-class', 'publicplay', '#main-player')
-ygdy8.cc##.container > a[href^="/"]
-ygdy8.cc##body > a[href^="/"]
 yhdm*.com/js/wap2-jm-ms.js?ver=
 yicai.com##.dfb-ad
 yicai.com##.gg_loadpage
@@ -38001,12 +38042,6 @@ zapak.com#%#(()=>{document.addEventListener("DOMContentLoaded",(()=>{ prerollski
 zapak.com#?#.rightPanel div.colm3 > div.widget-box:has(> div.ad300)
 zarabiajprzez24.pl,nakolei.pl,swiatoze.pl##.code-block
 zbporn.*##.desktop-nat-spot
-zbporn.com##.block-t > div[style*="height:"]
-zbporn.com##.box-f
-zbporn.com##.cs-link-holder
-zbporn.com##.head-spot
-zbporn.com##.p-ig
-zbporn.com##iframe[src^="https://sex-picsxxx.name/"]
 zbporn.com,zbporn.tv##.view-aside-block
 zbporn.com,zbporn.tv##.view-right
 zcool.com.cn##.advlongDefault
@@ -38392,6 +38427,7 @@ zzzyk.com###Tinfo
 ||24scor*.*/img/*background$image
 ||24scor*.*/img/branding
 ||2500sz.com/site/
+||258zw.com^$third-party
 ||28.com/count.js
 ||28.com/countnew.js
 ||28.com/public/js/w3c_float.js
@@ -38506,6 +38542,7 @@ zzzyk.com###Tinfo
 ||51ztzj.com/res/web/img/download_sign
 ||51ztzj.com/res/web/img/pic/inshow.jpg
 ||51zxw.net/netclass/images/*_top.jpg
+||520z-2.com/uploadfile/sucai/
 ||521000.com/co/
 ||5251.net^$third-party
 ||52che.com/Inc/FooterComm_
@@ -38601,6 +38638,8 @@ zzzyk.com###Tinfo
 ||99lb.net/index_files/*/970
 ||99mst.com/upfiles/adv/main02.jpg
 ||99tianji.com/hack/
+||9duw.com/js/sj
+||9duw.com/pic/
 ||9game.cn/stat/
 ||9ihome.com/info/ADTopvnet/
 ||9ist.com/others/ad/
@@ -39003,7 +39042,6 @@ zzzyk.com###Tinfo
 ||autopiano.cn/data/jd_
 ||autoscout24.*/frontend-metrics/
 ||avjd014.com/*ad^
-||awifi.cn^$third-party
 ||ax.*.ifeng.com^
 ||axutongxue.*/js/yes.
 ||ayxz.com/images/$script
@@ -39851,6 +39889,7 @@ zzzyk.com###Tinfo
 ||elecfans.com/skin-*ad_
 ||elecfans.com/static/home_ad/
 ||elecfans.com/webapi/advertisement/
+||embed.fireplace.yahoo.com/embed/*?articleId=$domain=news.yahoo.com
 ||emoney.cn/www/officalWebStatic/js/slideAd.js
 ||en8848.com.cn/js/ad
 ||en8848.com.cn/js/content.
@@ -40153,6 +40192,9 @@ zzzyk.com###Tinfo
 ||hentaicomic.*/data/ds/
 ||hentaicomic.*/data/game/*/wap.gif
 ||hentaihaven.xxx^$referrerpolicy=origin
+||hentaiworld.tv/banners-script.js
+||hentaiworld.tv/footer-banners.html
+||hentaiworld.tv/wp-content/uploads/*-300x300px-
 ||herogame.com^$subdocument,domain=gamer.com.tw
 ||hexun.*/hxpage/index.html
 ||hexun.com*/hx_news/hx_news_finalpage.js
@@ -40601,6 +40643,7 @@ zzzyk.com###Tinfo
 ||kaoyan.com/global/js/backtopnew.js
 ||kaoyan.com/school/final_class.html
 ||kaoyan.com/school/js/yz.school.packed.js
+||kaoyan1v1.com/IAA/
 ||kayak.*/vestigo/measure
 ||kb-render.alicdn.com/html/*.html
 ||kdw*.com/layer/layer.js
@@ -40695,6 +40738,7 @@ zzzyk.com###Tinfo
 ||lenosoft.net/js/ad
 ||lenovo.com.cn/cms/2018-07-20/201807201014498251793.png
 ||lenovo.com.cn/lenovo/bid?clientType=
+||letsdoeit.com/tracking/
 ||letssex.
 ||letv.com/cloud_pl/
 ||letv.com/env/
@@ -40727,6 +40771,14 @@ zzzyk.com###Tinfo
 ||linecg.com/uploads/banner/
 ||link114.cn/template/js/showpics_
 ||linkbux.com/track?$popup
+||linkedin.com/apfc/collect$xmlhttprequest
+||linkedin.com/collect/
+||linkedin.com/countserv/count/$third-party
+||linkedin.com/li/track$xmlhttprequest
+||linkedin.com/litms/utag/
+||linkedin.com/platform-telemetry/
+||linkedin.com/sensorCollect/
+||linkedin.com/tscp-serving/
 ||linkexchange.
 ||linkhelper.cn/mmshow
 ||linksprf.com^$badfilter
@@ -40829,6 +40881,7 @@ zzzyk.com###Tinfo
 ||mapi-log.qoo*.jp^
 ||market.aliyun.com/
 ||marketplace-*.hyprmx.com^
+||mas.martech.yahoo.com^$domain=mail.yahoo.com
 ||mat.chasedream.com^*.gif
 ||mat1.gtimg.com/$object
 ||mat1.gtimg.com/2014/vikkydu/GA/haier
@@ -41191,6 +41244,10 @@ zzzyk.com###Tinfo
 ||people.com.cn/adv/
 ||people.com.cn/img/gjt/
 ||people.com.cn/rmrb/tplimg/new.js
+||pervclips.com/tube/js/customscript.js
+||pervclips.com/tube/jsb/$script
+||pervclips.com/tube/plugin.js
+||pervclips.com/tube/static_new/js/new/customscript.js
 ||pharmnet.com.cn/cnbanner/
 ||pharmnet.com.cn/js/float_div.js
 ||phb123.com/skin/js/tongji.js
@@ -41512,6 +41569,8 @@ zzzyk.com###Tinfo
 ||s1.bdstatic.com/r/www/cache/biz/ecom/common/api/$script
 ||s8.pw^$third-party
 ||safebeta.cn/gg/sefabeta_*js
+||salesmartly.com/client/log/
+||salesmartly.com/client/station/log?
 ||sam*.baby-kingdom.com^
 ||same*.stockstar.com^
 ||saohu*.com/config/json/cctv.json?
@@ -41554,8 +41613,6 @@ zzzyk.com###Tinfo
 ||services.*.pl/belka/$domain=teletoonplus.pl
 ||servo-report.dvdfab.
 ||servo-report.keepstreams.*^
-||sextvx.com/*/ads/web/
-||sextvx.com/ads/
 ||sexvid.*/ghjk/
 ||sexvid.*/mia/
 ||sexvid.*/rrt/xd.js
@@ -41915,6 +41972,8 @@ zzzyk.com###Tinfo
 ||tigtag.com/styles/phpcms/js/tigtag/ads.js
 ||timecn.cn/image/alipay.jpg
 ||timeout.*/static/js/ads-
+||tineye.com/api/v1/affiliate
+||tineye.com/api/v1/keyword_search/
 ||tingchina.com/images/aibaoliang.gif
 ||tingchina.com/js/*220-
 ||tingchina.com/js/760
@@ -42250,7 +42309,6 @@ zzzyk.com###Tinfo
 ||xchina.*/plugins/jquery.modal/
 ||xchina.*/plugins/sweetAlert2/
 ||xchina.*/scripts/modal/modal.js
-||xchina.co/scripts/push_*.js
 ||xdcad.net/source/plugin/disad/disad.js
 ||xdf.cn/v4/js/leyus/
 ||xgo.com.cn/pv.js
@@ -42305,7 +42363,6 @@ zzzyk.com###Tinfo
 ||xpcha.com/js/notice.js
 ||xprime4u.*/wp-content/uploads/*/*_ads.gif
 ||xs8.cn/qreport?
-||xtapes.to/ad/
 ||xtits.*/static/js/custom.js
 ||xuan5.com^$third-party
 ||xuehi.cn/reward/reward
@@ -42345,7 +42402,6 @@ zzzyk.com###Tinfo
 ||yeptube.*/templates/base_master/js/jquery.shows2.min.js
 ||yesky.com/s?z=
 ||yeyou.com/2013/new/yeyou-float-window.js
-||ygdy8.com/jsy1/
 ||yhsfsdv*.com^
 ||yidengfe.com/launches/01/yd.png
 ||yigujin.cn/faaa/
@@ -42414,7 +42470,6 @@ zzzyk.com###Tinfo
 ||zbjimg.com/static/union/
 ||zbporn.*/tri/zp.js
 ||zbporn.*/ttt/
-||zbporn.com/ttt/
 ||zc173.com/173fee/
 ||zcaijing.com/images/
 ||zcchyr*.xyz^
