@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251013002303
-! Last modified: 2025/10/13 00:23:03
-! Blocked Filters: 42574
+! Version: 20251013094416
+! Last modified: 2025/10/13 09:44:16
+! Blocked Filters: 42578
 !
 ###AC_ad
 ###AD_160
@@ -23630,7 +23630,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://posthog.$script,domain=~posthog.com
 ://promo.$~media,third-party,domain=~myshopify.com|~promo.com|~shopifycloud.com|~slidely.com
 ://pt.*?psid=$third-party
-://r.*/s1/$subdocument,third-party
+://r.*/s1/$other,subdocument,third-party
 ://r.i.ua^
 ://r.reklam*.com^
 ://rou*/_next/static/chunks/pages/home-
@@ -23653,7 +23653,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://stat.*/pageview/$xmlhttprequest
 ://stats.*/code/e.js
 ://t.*/open^$image
-://t.*/s1/$subdocument,third-party
+://t.*/s1/$other,subdocument,third-party
 ://t.order.*/r/?id=$image
 ://t.targito.
 ://tagging.*.js?aw=
@@ -23795,6 +23795,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ?event=performancelogger:
 ?frm=*&ct=*&dit=$third-party
 ?groupType=engagement&eventType=CLICK&
+?id=3&adl=3$subdocument,~third-party
 ?key=$popup,domain=verystream.com
 ?key=$subdocument,domain=rawinu.com
 ?key=*&uuid=$subdocument,third-party
@@ -37277,6 +37278,8 @@ vjav.*,gaytxxx.com##.undp
 vjav.*,privatehomeclips.com##.partners-wrap + div[class]
 vjav.com,fuxxx.com,hdzog.tube,hdzog.com,hotmovs.com,privatehomeclips.com##.partners-wrap
 vjav.com,hotmovs.*##.videos-tube-friends
+vjav.com,vjav.tube##.left + div:has(> div[class] > [id^="ntv"])
+vjav.com,vjav.tube##.undp
 vjav.tube,privatehomeclips.com##.jwplayer > div.afs_ads + span[class]
 vk.com,vk.ru###system_msg
 vkcdnservice.appspot.com^$third-party
@@ -38260,6 +38263,7 @@ zzzyk.com###Tinfo
 ||*-ad.a.yximgs.com^
 ||*-applog.fqnovel.com^
 ||*-datareceiver.aki-game.net^
+||*-sdk.rum.aliyuncs.com^
 ||*.$image,redirect=1x1-transparent.gif,third-party,domain=rmdown.com
 ||*.$image,rewrite=abp-resource:1x1-transparent-gif,third-party,domain=rmdown.com
 ||*.com/*/*/tt?id=$third-party
