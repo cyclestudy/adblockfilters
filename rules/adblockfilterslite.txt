@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251018162543
-! Last modified: 2025/10/18 16:25:43
-! Blocked Filters: 42530
+! Version: 20251019002333
+! Last modified: 2025/10/19 00:23:33
+! Blocked Filters: 42531
 !
 ###AC_ad
 ###AD_160
@@ -20067,7 +20067,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /live173_*/46860.
 /live800.
 /livecounter.php?wid=
-/livejasmin.$~xmlhttprequest,domain=~livejasmin.com
 /livestats.js
 /livezilla/server.php?request=track&
 /ljcounter/?d=
@@ -20470,6 +20469,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /oo/*/lsync.js
 /oo/cl*.js?rd=
 /oo/cl.js|$~third-party
+/op/analytics.js?domain=
 /opbb/float.js
 /opbb/obpp.tpl
 /opdc.js
@@ -27327,6 +27327,7 @@ amazon.*###sponsoredProducts_feature_div
 amazon.*###typ-recommendations-stripe-1
 amazon.*###typ-recommendations-stripe-2
 amazon.*##.AdsCard_container__K6vmo
+amazon.*##.a-cardui[class*="_new-detail-faceout-box_"]:has(.dynamicSponsoredLabelClass)
 amazon.*##.amzn-safe-frame-container
 amazon.*##.dp-widget-card-deck:has([data-ad-placement-metadata])
 amazon.*##.s-main-slot > div.s-result-item:has(> .sg-col-inner:only-child > div[class*="widget=loom-"][class*="FEATURED"])
