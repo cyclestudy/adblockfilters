@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251018002618
-! Last modified: 2025/10/18 00:26:18
-! Blocked Filters: 42513
+! Version: 20251018092703
+! Last modified: 2025/10/18 09:27:03
+! Blocked Filters: 42518
 !
 ###AC_ad
 ###AD_160
@@ -15187,9 +15187,12 @@
 ##video[poster*="html-load.com/"]
 ##zeus-ad
 $$div[style="display: none !important;"]:contains(!function(){function a(a){var _idx=)
+$$div[style="display: none !important;"]:contains('ed2k://)
+$$script:contains(!function(){function a(a){var _idx=)
 $$script:contains(/document\.write[^|&%$#@!]{0,400}:8007"\+"\/cc\//)
 $$script:contains(?is_not=1&target=1&ty=2)
 $$script:contains(_mJd5Y2FNOfYm62LY5FuY7O5Yc6)
+$$script:contains(var d10={win:false,mac:false,xll:false};)
 $$script:contains(||!navigator.platform){setTimeout(function () {w.location.href=url)
 $$script[wildcard="*adcashMacros*zoneSett*"][min-length="2000"][max-length="25000"]
 $cookie=/^adb\$|adb\.key/,domain=iprima.cz
@@ -28213,8 +28216,10 @@ bigtitslust.com,sortporn.com##.pignr.item
 bigwarp.*###banner-overlay
 bigwarp.*###blk1
 bigwarp.*##div[style="position: fixed; inset: 0px; background: rgba(0, 0, 0, 0.42); z-index: 2147483647; display: flex; align-items: center; justify-content: center; pointer-events: auto;"]
+bigwarp.*,bgwp.cc###bw-overlay
 bigwarp.*,bgwp.cc#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'window.open')
 bigwarp.*,bgwp.cc#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'overlay')
+bigwarp.*,bgwp.cc#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'overlay')
 bigwarp.*,bgwp.cc#%#//scriptlet('prevent-window-open')
 bigwarp.*,bgwp.cc$$script:contains(/\.add\([\s\S]*?under:[\s\S]*?newTab:/)
 bikeradar.com,radiotimes.com##.sidebar__item-spacer--advert-top
