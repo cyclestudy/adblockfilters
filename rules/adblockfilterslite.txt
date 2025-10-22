@@ -3,8 +3,8 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251022163112
-! Last modified: 2025/10/22 16:31:12
+! Version: 20251023002907
+! Last modified: 2025/10/23 00:29:07
 ! Blocked Filters: 42610
 !
 ###AC_ad
@@ -41192,8 +41192,8 @@ zzzyk.com###Tinfo
 ||okooo.com/I/?method=system.data.ad&
 ||ol-img.com/channel/tuku/js/tukuPopup.js
 ||om.cn/api/ad-om/
+||omuzaani.me^$replace=/(window\.location\.(replace|href))/\/\/\$1/,document,subdocument
 ||omuzaani.me^$replace=/forceKillplayer\(/\/\/forceKillplayer(/,document,subdocument
-||omuzaani.me^$replace=/window.location.replace/\/\/window.location.replace/,document,subdocument
 ||onegreen.net/MyFile/
 ||oneinstack.com/images/oneinstack-
 ||onejav.com^$referrerpolicy=origin
