@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251119003046
-! Last modified: 2025/11/19 00:30:46
-! Blocked Filters: 42724
+! Version: 20251119094513
+! Last modified: 2025/11/19 09:45:13
+! Blocked Filters: 42723
 !
 ###AC_ad
 ###AD_160
@@ -20338,6 +20338,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /modules/ads/*$~xmlhttprequest
 /modules/video/player/nuevo/midroll.php?
 /moksa.js
+/mol-adverts-delayed.js$script
 /monetate.js
 /moneymaker-banners/ads_
 /moneymaker/images/*.gif
@@ -27399,9 +27400,7 @@ amazon.*##.a-cardui[class*="_new-detail-faceout-box_"]:has(.dynamicSponsoredLabe
 amazon.*##.amzn-safe-frame-container
 amazon.*##.dp-widget-card-deck:has([data-ad-placement-metadata])
 amazon.*##.s-main-slot > div.s-result-item:has(> .sg-col-inner:only-child > div[class*="widget=loom-"][class*="FEATURED"])
-amazon.*##.s-result-item:has([data-ad-feedback-label-id])
 amazon.*##.s-result-item:has([data-ad-feedback])
-amazon.*##.s-result-item:has(div.puis-sponsored-label-text)
 amazon.*##.s-result-list > .a-section:has(.sbv-ad-content-container)
 amazon.*##.s-search-results > div[data-asin] div[data-component-props*="Sponsored"]
 amazon.*##.sbv-ad-content-container
