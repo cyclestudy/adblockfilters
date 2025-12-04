@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251204163237
-! Last modified: 2025/12/04 16:32:37
-! Blocked Filters: 42876
+! Version: 20251205003339
+! Last modified: 2025/12/05 00:33:39
+! Blocked Filters: 42879
 !
 ###AC_ad
 ###AD_160
@@ -36291,6 +36291,7 @@ sogou.com##div[class^="news-top-banner"]
 sogou.com#?#div[class^="right-feedback"]:-abp-has(>.list-step-title:-abp-contains(网游))
 sogou.com#?#div[class^="right-feedback"]:has(>.list-step-title:contains(网游))
 sohu.com###apkBanner
+sohu.com###bottomBanner
 sohu.com###bottomBanner[data-spm='b-mb'][data-spm-stop='init']
 sohu.com###hotpicnew
 sohu.com###middleBanner[data-spm='a-mb'][data-spm-stop='init']
@@ -38574,6 +38575,7 @@ zzzyk.com###Tinfo
 ||*inapps.appsflyersdk.com^
 ||*launches.appsflyersdk.com^
 ||*register.appsflyersdk.com^
+||*stun.kugou.com^
 ||*two-gun-volley.pages.dev^
 ||*xav.*/guang/*.gif
 ||*xav.*/guang/*.jpg
@@ -42174,6 +42176,7 @@ zzzyk.com###Tinfo
 ||streamtape.*/mainstream2.js
 ||streamtape.*/sw.js
 ||stulip.org/static/js/header.js
+||stun.*.kugou.com^
 ||stw.extreme-down.
 ||subhd.*/kaiyad.
 ||subnewss*.net^
