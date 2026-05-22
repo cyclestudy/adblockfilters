@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260522020148
-! Last modified: 2026/05/22 02:01:48
-! Blocked Filters: 43595
+! Version: 20260522115419
+! Last modified: 2026/05/22 11:54:19
+! Blocked Filters: 43596
 !
 ###AC_ad
 ###AD_160
@@ -12191,6 +12191,7 @@
 ##.news-ad-square-box
 ##.news-ads-top
 ##.news-item--ad
+##.newsAD
 ##.news_ad_box
 ##.news_vibrant_ads_banner
 ##.newsad
@@ -20952,7 +20953,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /player/*/vast.js$domain=designparty.sx
 /player/ads/*$~xmlhttprequest
 /player/html.php?aid=*&video_id=*&referer=
-/player/stats.php$image,redirect-rule=1x1-transparent.gif,domain=camhub.world|wxx.wtf|porn4fans.com
+/player/stats.php$image,redirect-rule=1x1-transparent.gif,domain=camhub.world|wxx.wtf|porn4fans.com|fyxxr.to
 /player/stats.php?
 /player/video.js/videojs-vast-vpaid/*
 /player_embed_cu.php?s=$popup
@@ -23140,7 +23141,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 18comic.org,18comic.vip,jmcomic1.city,jmcomic1.win,jmcomic1.group##[data-group^='photo_center_']
 18comic.org,18comic.vip,jmcomic1.city,jmcomic1.win,jmcomic1.group#.bot-per-times
 18comic.org,18comic.vip,jmcomic1.win#@?#:has(> script[src*=".realsrv.com"])
-18porn.sex,18teensex.tv,429men.com,4kporn.xxx,4wank.com,alotporn.com,amateur8.com,amateurporn.co,amateurporn.me,bigtitslust.com,camwhores.tv,danude.com,daporn.com,epicgfs.com,fapnow.xxx,fpo.xxx,freeporn8.com,fuqer.com,gayck.com,hentai-moon.com,hentai0day.com,heroero.com,hoes.tube,intporn.com,japaneseporn.xxx,javwind.com,jizzberry.com,mmshub.online,multi.xxx,onlyhentaistuff.com,porndr.com,sexjav.tv,sextubespot.com,sortporn.com,tabootube.xxx,trueamateurporn.org,vilevideos.com,watchmygf.xxx,xcavy.com,xgroovy.com,xmateur.com,xxxshake.com##.table
+18porn.sex,18teensex.tv,429men.com,4kporn.xxx,4wank.com,alotporn.com,amateur8.com,amateurporn.co,amateurporn.me,bigtitslust.com,camwhores.tv,danude.com,daporn.com,epicgfs.com,fapnow.xxx,fpo.xxx,freeporn8.com,fuqer.com,gayck.com,hentai-moon.com,hentai0day.com,heroero.com,hoes.tube,intporn.com,japaneseporn.xxx,javwind.com,jizzberry.com,mmshub.online,multi.xxx,onlyhentaistuff.com,porndr.com,sexjav.tv,sextubespot.com,sortporn.com,tabootube.xxx,trueamateurporn.org,vilevideos.com,watchmygf.xxx,watchporn.to,xcavy.com,xgroovy.com,xmateur.com,xxxshake.com##.table
 18porn.sex,amateur8.com,anyporn.com,area51.porn,bigtitslust.com,eachporn.com,fapster.xxx,fpo.xxx,freeporn8.com,hentai-moon.com,hentai0day.com,its.porn,izlesimdiporno.com,mmshub.online,pervertslut.com,porngem.com,pornmeka.com,porntop.com,sexvid.xxx,sortporn.com,tktube.com,uiporn.com,xhamster.com##.sponsor
 18teensex.tv,3movs.xxx,adultdeepfakes.com,babesmachine.com,chaturbate.com,fboomporn.com,freepornpicss.com,gramateurs.com,happysex.ch,hdtube.porn,its.porn,kawaiihentai.com,milffox.com,oldies.name,paradisehill.cc,playporngames.com,playsexgames.xxx,playvids.com,porngames.com,private.com,submittedgf.com,teenextrem.com,video.laxd.com,vikiporn.com,vjav.com,watchhentaivideo.com,waybig.com,xbabe.com,xcum.com,xnudepics.com,xpornpix.com,youcanfaptothis.com,yourdailygirls.com,youx.xxx##.banner
 1905.com##.mobile_ad_promote
@@ -24070,6 +24071,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 :81/c/i.php?id=$script
 :81/s/i.php?id=$script
 :818/nowscore/
+:866/o.js$script,third-party
 :8686/8888/*.gif$third-party,image
 :88/999pc/
 :88/lighttpd/default/
@@ -24485,8 +24487,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@/needsharebutton.min.js$domain=leetcode-cn.com
 @@/owa/service.svc$document
 @@/player/*$stealth=referrer,domain=ibomma.*
-@@/player/stats.php$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|watchmdh.to|porn4fans.com|porno24.to
-@@/player_ads.html$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|camwhoresbay.porn|watchmdh.to|ebalovo.porn|ebalovo.adult|camlovers.tv|camhub.tv|pornissimo.org|porntn.com|femdomtb.com|pornoham.me|tubsexer.com|homegrownfreaks.net|pornfd.com|sexcams-24.com|watchmdh.to|porno24.to
+@@/player/stats.php$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|watchmdh.to|porn4fans.com|porno24.to|fyxxr.to
+@@/player_ads.html$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|camwhoresbay.porn|watchmdh.to|ebalovo.porn|ebalovo.adult|camlovers.tv|camhub.tv|pornissimo.org|porntn.com|femdomtb.com|pornoham.me|tubsexer.com|homegrownfreaks.net|pornfd.com|sexcams-24.com|watchmdh.to|porno24.to|fyxxr.to
 @@/playlist.m3u8$stealth=referrer|ip
 @@/playlist/*caxi.m3u8$xmlhttprequest,stealth=referrer,domain=crackstreamer.net|streameast.app|1stream.eu|buffstreams.app
 @@/playlists/*/play*.jpeg$xmlhttprequest,stealth=referrer
@@ -29236,8 +29238,6 @@ camvideos.tv,pornfapr.com##.margin-fix > .place
 camwhores.*#%#//scriptlet('set-constant', 'flashvars.adv_postpause_src', '')
 camwhores.film,x-movies.top,gamecopyworld.eu,gamecopyworld.com#%#//scriptlet("abort-on-property-read", "TotemToolsObject")
 camwhores.tv,camwhores.video###camsoda-embed
-camwhores.tv,viralxxxporn.com,thothub.vip,yesporn.vip,85po.com,85po.net,85xo.com,85xo.com,watchmdh.to,watchporn.to,viralpornhub.com,camwhoresbay.porn,watchmdh.to,ebalovo.porn,ebalovo.adult,camlovers.tv,camhub.tv,pornissimo.org,porntn.com,femdomtb.com,pornoham.me,tubsexer.com,homegrownfreaks.net,pornfd.com,sexcams-24.com#@##ads_iframe
-camwhores.tv,viralxxxporn.com,thothub.vip,yesporn.vip,85po.com,85po.net,85xo.com,85xo.com,watchmdh.to,watchporn.to,viralpornhub.com,camwhoresbay.porn,watchmdh.to,ebalovo.porn,ebalovo.adult,camlovers.tv,camhub.tv,pornissimo.org,porntn.com,femdomtb.com,pornoham.me,tubsexer.com,homegrownfreaks.net,pornfd.com,sexcams-24.com#@#.ads-iframe
 camwhores.video,camwhores.tv##.container > .content ~ .headline
 camwhores.video,camwhores.tv##.footer-wrap > div[style="text-align:center;margin-top:5px;margin-bottom:5px;font-size:20px;"]
 camwhores.video,camwhores.tv##.list-live-models
@@ -30121,6 +30121,7 @@ deployhappiness.com,dmitrysotnikov.wordpress.com,faravirusi.com,freedom-shift.ne
 depositfiles.com,depositfiles.org,dfiles.eu,dfiles.ru###member_menu > .submenu
 dermstore.com,lookfantastic.com##.integration-sponsored-ads-pdp-container
 dermstore.com,lookfantastic.com##.sponsored-product-plp
+desi-porn.tube,shemalez.*##.content > div > .wrapper + div[class]
 desiporn.one,gay0day.com,thetranny.com,xlilith.com##.block-video > .table:has(> div[id][style^="height:"] > iframe.na)
 desiporn.one,gay0day.com,thetranny.com,xlilith.com##.sponsor
 destructoid.com,wegotthiscovered.com##.wp-block-gamurs-ad
@@ -31426,6 +31427,11 @@ fxstreet.*#$#div[id*="-sponsorBroker-topBanner"] { display: none !important; }
 fxykx.com,pantsu.cat#@##banner_ad
 fyi.tv,aetv.com,mylifetime.com,history.com##div[class^="Component-adBreak-"]
 fyi.tv,aetv.com,mylifetime.com,history.com#%#//scriptlet('m3u-prune', '/redirector\.googlevideo\.com\/videoplayback[\s\S]*?dclk_video_ads/', '.m3u8')
+fyxxr.to,camwhores.tv,viralxxxporn.com,thothub.vip,yesporn.vip,85po.com,85po.net,85xo.com,85xo.com,watchmdh.to,watchporn.to,viralpornhub.com,camwhoresbay.porn,watchmdh.to,ebalovo.porn,ebalovo.adult,camlovers.tv,camhub.tv,pornissimo.org,porntn.com,femdomtb.com,pornoham.me,tubsexer.com,homegrownfreaks.net,pornfd.com,sexcams-24.com#@##ads_iframe
+fyxxr.to,camwhores.tv,viralxxxporn.com,thothub.vip,yesporn.vip,85po.com,85po.net,85xo.com,85xo.com,watchmdh.to,watchporn.to,viralpornhub.com,camwhoresbay.porn,watchmdh.to,ebalovo.porn,ebalovo.adult,camlovers.tv,camhub.tv,pornissimo.org,porntn.com,femdomtb.com,pornoham.me,tubsexer.com,homegrownfreaks.net,pornfd.com,sexcams-24.com#@#.ads-iframe
+fyxxr.to,hihentaiporn.com,watchporn.to,camwhores.tv,japan-whores.com,thothub.vip,3dporndude.com,xcadr.tv,fapnow.xxx,bobs-tube.com##.fp-brand
+fyxxr.to,porn4fans.com,porno24.to,viralxxxporn.com#%#//scriptlet('prevent-setTimeout', '.style.visibility', '2000')
+fyxxr.to,trannymovs.com,xpee.com,thothub.to,thothub.ch,thothub.*,host4fap.com,teenxy.com,alotporn.com,tubsexer.*,cambabe.me##.block-video > .table
 fzmovies.*##center > a[href="https://fzstudios.app/"]
 fzmovies.*#%#//scriptlet("abort-current-inline-script", "confirm", "Download the official Android app")
 fzmovies.*#%#//scriptlet("prevent-window-open")
@@ -31537,7 +31543,6 @@ gaystream.click,gaystream.pw#%#//scriptlet('set-cookie', 'popcashpu', '1')
 gaystream.click,gaystream.pw#%#//scriptlet('trusted-click-element', '.streams .overlay-close > button', '', '500')
 gaystream.click,gaystream.pw,pornsos.com##.a-box
 gaystream.click,listeamed.net#%#//scriptlet('prevent-fetch', '/adligature\.com|widgets\.outbrain\.com\/outbrain\.js|srvtrck\.com|quantserve\.com/')
-gaytxxx.com,thegay.com,txxx.*,txxxporn.tube,desi-porn.tube,desi-porn.xyz,onlyporn.tube,transtxxx.com##a[class^="tag"][target="_blank"]
 gaytxxx.com,transtxxx.com##.video-content > div[class] > div:has(> div.pplayer) + div[class]
 gaytxxx.com,txxxporn.tube,txxx.*##div[class^="video-conten"] div[class]:has(> div[class] > div[class] > div.direct-abnner)
 gaytxxx.com,vjav.tube,vjav.com,transtxxx.com,upornia.*,txxxporn.tube,txxx.*##.video-videos-slider
@@ -31598,7 +31603,6 @@ gfan.com,gfan.net.cn#@##shareBox
 gfthai.com,boobse.com,keporn.com,peporn.com,teen21.com,ourgay.tube,pornuse.com,uanal.com,pornl.tube,xshemale.tube,keporn.vip,fuxxx.com,pornl.com##.video-ntv-wrapper
 gfthai.com,boobse.com,keporn.vip,fuxxx.com,keporn.com,peporn.com,teen21.com,ourgay.tube,pornuse.com,uanal.com,pornl.tube,xshemale.tube,ourgay.com,lesbigo.com,porn-latina.com,pornl.com,ooxxx.com,privatehomeclips.com##section[style="padding: 20px;"]
 gfthai.com,keporn.vip,keporn.com,peporn.com,teen21.com,pornuse.com,uanal.com##div[class^="top-categories"] > a[href][target="_blank"]
-gfthai.com,mrgay.tube,boobse.com,vjav.tube,pornl.tube,keporn.com,voyeurhit.tube,uanal.com,peporn.com,abbdsm.com,abgay.tube,abjav.com,abxxx.com,abmilf.com,ourgay.tube,pornuse.com,desi-porn.xyz,onlyporn.tube,in-porn.com,pornclassic.tube,transtxxx.com,gaytxxx.com,xshemale.tube,ourgay.com,fuxxx.com,txxxporn.tube,mrgay.com,xjav.tube,lesbigo.com,porn-latina.com,bdsmx.tube,blackporn.tube,inporn.com,porntop.com,vxxx.com,aniporn.com,txxx.*,vjav.com,voyeurhit.com,pornl.com,ooxxx.com,txxx.com,01tube.com,tubepornclassic.com,keporn.vip,transtxxx.com,abtranny.com,shemalez.*,upornia.*,privatehomeclips.com,gettranny.com,desi-porn.tube,thegay.com,xmilf.com,hotmovs.com,hclips.com,manysex.*,hdzog.com,hdzog.tube##.nopop
 ggcj.com##.dbxf
 ggdoc.com.cn#@#.addiv
 ggjav.com,ggjav.tv###pc_instant
@@ -32169,7 +32173,6 @@ hidden4fun.com,coursesity.com,ichacha.net,website.informer.com,mrexcel.com,block
 hifidiy.net###part_left2
 hifidiy.net###part_right_gg7
 hihentaiporn.com,rat.xxx,hdtube.porn,pornid.*##.player-top-line
-hihentaiporn.com,watchporn.to,camwhores.tv,japan-whores.com,thothub.vip,3dporndude.com,xcadr.tv,fapnow.xxx,bobs-tube.com##.fp-brand
 himovies.sx,moviesjoyhd.to##img[style="max-width: 728px; width: 100%"]
 hindi.news18.com,bengali.news18.com##.placeholder
 hindi.news18.com,bengali.news18.com##div[class*="right"] > div[class*="side"]:not([class*="gallery"])> div[style*="min-height:"] > #vigyapan
@@ -35641,7 +35644,6 @@ porn1free.com,retrooh.com,hotclassicfuck.com,videos6.com##.player > #embed__pre
 porn300.com,porndroids.com###overlay-video
 porn300.com,porndroids.com##.hidden-under-920
 porn4fans.com,bussyhunter.com#%#//scriptlet('trusted-replace-node-text', 'script', 'protect_block', '/protect_block.*?\,/', '')
-porn4fans.com,porno24.to,viralxxxporn.com#%#//scriptlet('prevent-setTimeout', '.style.visibility', '2000')
 pornbest.org,pornlulu.com,ptt.sex##.no-gutters
 pornbest.org,ptt.sex##.btn-group + .row
 pornbest.org,ptt.sex##.links.row
@@ -36591,8 +36593,6 @@ shemale.pub,tranny.one,sunporno.com###amiddle
 shemalesin.com,bigtitslust.com,freeporn8.com###player_add
 shemalesin.com,ebony8.com,sortporn.com,freeporn8.com,amateur8.com,maturetubehere.com##.invideo.pignr
 shemalesin.com,ebony8.com,sortporn.com,freeporn8.com,amateur8.com,maturetubehere.com##.top2.pignr
-shemalez.*##.content > div > .wrapper + div[class]
-shemalez.*##.header__nav > div.left > div.dropdown ~ a[href][target="_blank"]
 shemalez.*##.video-page__content > .left  + div[class]
 shemalez.*##iframe[src^="https://go.mnaspm.com/"]
 shemalez.tube,hotmovs.*##.underplayer__info > div[class]:has(> div > a[href^="http"][target="_blank"][rel="nofollow"])
@@ -37396,6 +37396,9 @@ thegay.com,pornclassic.tube,tubepornclassic.com#$?#a.top-bar { remove: true; }
 thegay.com,thegay.tube##.content > div:not([class]) > .wrapper ~ div[class]:not(.wrapper)
 thegay.com,thegay.tube,hotmovs.*##.underplayer__info > div[class]:first-child
 thegay.com,upornia.com,upornia.tube##.video-page__content > .right
+thegay.tube,gaytxxx.com,thegay.com,txxx.*,txxxporn.tube,desi-porn.tube,desi-porn.xyz,onlyporn.tube,transtxxx.com##a[class^="tag"][target="_blank"]
+thegay.tube,gfthai.com,mrgay.tube,boobse.com,vjav.tube,pornl.tube,keporn.com,voyeurhit.tube,uanal.com,peporn.com,abbdsm.com,abgay.tube,abjav.com,abxxx.com,abmilf.com,ourgay.tube,pornuse.com,desi-porn.xyz,onlyporn.tube,in-porn.com,pornclassic.tube,transtxxx.com,gaytxxx.com,xshemale.tube,ourgay.com,fuxxx.com,txxxporn.tube,mrgay.com,xjav.tube,lesbigo.com,porn-latina.com,bdsmx.tube,blackporn.tube,inporn.com,porntop.com,vxxx.com,aniporn.com,txxx.*,vjav.com,voyeurhit.com,pornl.com,ooxxx.com,txxx.com,01tube.com,tubepornclassic.com,keporn.vip,transtxxx.com,abtranny.com,shemalez.*,upornia.*,privatehomeclips.com,gettranny.com,desi-porn.tube,thegay.com,xmilf.com,hotmovs.com,hclips.com,manysex.*,hdzog.com,hdzog.tube##.nopop
+thegay.tube,shemalez.com,shemalez.tube,vjav.tube,vjav.com,desi-porn.tube,desi-porn.xyz##.header__nav > * > a[href][target="_blank"]
 thegay.tube,thegay.com#%#//scriptlet("abort-on-property-read", "adver.popunder.neverblock")
 thegoodchoice.ca,wandering-bird.com##.cb-box
 thehentai.net,aagmaal.cx,hentaianimezone.com,javsaga.ninja,evojav.pro,momon-ga.com,torrentkitty.one,141ppv.com,camcam.cc,javneon.tv,1337x.to,hdporn92.com,eachporn.com,yourdailypornvideos.ws#%#//scriptlet('set-constant', 'univresalP', 'noopFunc')
@@ -37689,7 +37692,6 @@ tranny.one,sunporno.com##.thumbs-container > .th-ba
 tranny.one,sunporno.com##.thumbs-container > div[style^="clear: both; box-sizing: content-box; margin:"]
 tranny.one,tubous.com##.flirt-footer
 trannygem.com,uiporn.com##.related-videos:has(> span[id$="-Nat-vip"])
-trannymovs.com,xpee.com,thothub.to,thothub.ch,thothub.*,host4fap.com,teenxy.com,alotporn.com,tubsexer.*,cambabe.me##.block-video > .table
 trannytube.tv,icegaytube.tv##.b-secondary-column__banners
 transfap.to,disney-porn.com,sangetods.net#%#//scriptlet('set-constant', 'dclm_ajax_var.disclaimer_redirect_url', '')
 transfermarkt.*###home-rectangle-spotlight
@@ -38221,7 +38223,6 @@ vjav.tube,boobse.com,ourgay.tube,pornclassic.tube,pornl.tube,upornia.*,hclips.co
 vjav.tube,hclips.com,upornia.com,in-porn.com,boobse.com,tubepornclassic.com,pornl.com,pornl.tube,vjav.com,ourgay.tube,pornclassic.tube,porn-latina.com,lesbigo.com,privatehomeclips.com,manysex.*,xmilf.com,inporn.com,xshemale.tube,ourgay.com,ooxxx.com##.tag__item:has(> a[target="_blank"][href])
 vjav.tube,privatehomeclips.com##.jwplayer > div.afs_ads + span[class]
 vjav.tube,vjav.com##.headline:has(+ .video-videos-slider)
-vjav.tube,vjav.com,desi-porn.tube,desi-porn.xyz##.header__nav > * > a[href][target="_blank"]
 vk.com,vk.ru###system_msg
 vkcdnservice.appspot.com^$third-party
 vmall.com#@#.iframeAd
