@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260617033920
-! Last modified: 2026/06/17 03:39:20
-! Blocked Filters: 43766
+! Version: 20260617122022
+! Last modified: 2026/06/17 12:20:22
+! Blocked Filters: 43765
 !
 ###AC_ad
 ###AD_160
@@ -40203,7 +40203,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||audiobookbay.*/images/d-t.gif
 ||audiobookbay.*/images/ddt.gif
 ||audiobookbay.*/images/fr.jpg
-||audiobookbay.nl^$replace=/window.location.replace\("\/member\/adblock.php"\);/return;/,~script,~stylesheet,~xmlhttprequest
 ||auth-*.hismarttv.com^
 ||autocentrum.pl^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/,xmlhttprequest,other,~script
 ||autocentrum.pl^$replace=/(\,).===.(&&[\s\S]*?\(\)\})/\$1false\$2/,~script,~stylesheet,~xmlhttprequest,~other
