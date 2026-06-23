@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260623191944
-! Last modified: 2026/06/23 19:19:44
-! Blocked Filters: 43757
+! Version: 20260624015903
+! Last modified: 2026/06/24 01:59:03
+! Blocked Filters: 43754
 !
 ###AC_ad
 ###AD_160
@@ -887,7 +887,6 @@
 ###ad_bnr_btf_08
 ###ad_body
 ###ad_bottom
-###ad_box
 ###ad_box1
 ###ad_box2
 ###ad_box_top
@@ -6084,7 +6083,6 @@
 ##.ad-tall
 ##.ad-tech-widget
 ##.ad-temp
-##.ad-text
 ##.ad-text-centered
 ##.ad-text-label
 ##.ad-text-link
@@ -27809,7 +27807,6 @@ aliyun.com##.yq-ads-blog
 aliyun.com##.yq-main-left > a:first-child
 all-nettools.com,filesharingtalk.com,kiwibiker.co.nz,printroot.com###ad_global_below_navbar
 allestoringen.be,allestoringen.nl,xn--allestrungen-9ib.at,xn--allestrungen-9ib.ch,xn--allestrungen-9ib.de,downdetector.ae,downdetector.ca,downdetector.co.nz,downdetector.co.uk,downdetector.co.za,downdetector.com.ar,downdetector.com.au,downdetector.com.br,downdetector.com.co,downdetector.com,downdetector.cz,downdetector.dk,downdetector.ec,downdetector.es,downdetector.fi,downdetector.fr,downdetector.gr,downdetector.hk,downdetector.hr,downdetector.hu,downdetector.id,downdetector.ie,downdetector.in,downdetector.it,downdetector.jp,downdetector.mx,downdetector.my,downdetector.no,downdetector.pe,downdetector.pk,downdetector.pl,downdetector.pt,downdetector.ro,downdetector.ru,downdetector.se,downdetector.sg,downdetector.sk,downdetector.web.tr#%#//scriptlet('set-constant', 'pbjs.onEvent', 'noopFunc')
-alliedwindow.com,isewanferry.co.jp,jreu-h.jp,junkmail.co.za,nexco-hoken.co.jp,version2.dk#@#.ad-text
 allkeyshop.com,cdkeyit.it,cdkeynl.nl,cdkeypt.pt,clavecd.es,goclecd.fr,keyforsteam.de##.background-link-left
 allkeyshop.com,cdkeyit.it,cdkeynl.nl,cdkeypt.pt,clavecd.es,goclecd.fr,keyforsteam.de##.background-link-right
 allmonitors24.com,streamable.com##.bottombanner
@@ -28188,6 +28185,7 @@ artima.com,turbobit.net###topbanner
 arydigital.tv,barakbulletin.com##.bsac
 as.com,desdelinux.net,tutiempo.net,ubunlog.com##.publi
 as.com,gokunming.com##.prom
+ascopost.com,fermanaghherald.com##.ad-text
 asd.ink,asd.pics,asd.homes##body > center > a[target="_blank"]
 asd.ink,asd.pics,asd.homes##body > div[id][style^="--rdata:"][style*="position: fixed; inset:"][style*="z-index:"]
 asd.ink,asd.pics,asd.homes#$#.main-content-xfs { display: block !important; }
@@ -35425,7 +35423,6 @@ pcgamebenchmark.com,soccerway.com,streetcheck.co.uk##.placement
 pcgamer.com,itproportal.com,laptopmag.com,windowscentral.com,tomsguide.com,tomshardware.com,digitalcameraworld.com##body > div[style^="position: fixed;"][style*="z-index: 999"][style*="pointer-events:"]:not([class]):not([id])
 pcgamer.com,techcrunch.com,tomsguide.com,tomshardware.com##div[class*="ad-unit"]
 pcgamer.com,tomshardware.com#@#.sponsored-article
-pcgamesn.com,ign.com,theatlantic.com##.ad-wrapper
 pcgamesn.com,pockettactics.com##.inlinerail
 pcgamesn.com,pockettactics.com,wargamer.com##.ad-injector-potential-slot
 pcgamesn.com,pockettactics.com,wargamer.com##.sn-placement
@@ -36396,6 +36393,7 @@ rpmvid.com,streamcasthub.store#%#(()=>{const e=Object.getOwnPropertyDescriptor(E
 rpmvid.com,streamcasthub.store#%#//scriptlet('trusted-create-element', 'head', 'script', '', '(()=>{const e=Object.getOwnPropertyDescriptor(Element.prototype,"innerHTML").set,t=Object.getOwnPropertyDescriptor(Element.prototype,"innerHTML").get;Object.defineProperty(Element.prototype,"innerHTML",{get(){const e=t.call(this);return e.includes("delete window")?"":e},set(t){e.call(this,t)}})})();')
 rrjc.com###alertBox
 rrjc.com##.coupletbox
+rscripts.net,pcgamesn.com,ign.com,theatlantic.com##.ad-wrapper
 rt.com,entrepreneur.com,siasat.com##div[data-spotim-slot-size="300x250"]
 ruanyifeng.com#@?#.asset-content > p:contains(/二维|助教|0 元|报名费|原价/) + p + p > img
 ruanyifeng.com#@?#.asset-content > p:contains(/二维|助教|0 元|报名费|原价/) + p > img
@@ -37455,7 +37453,6 @@ techmaniak.pl,activemaniak.pl,gizmaniak.pl,agdmaniak.pl,rtvmaniak.pl,fotomaniak.
 techmize.net,atravan.net#%#//scriptlet('prevent-xhr', 'adsbygoogle')
 techposts.org,findaudiobook.com###sidebar > #text-2
 techpowerup.com#$?#body style:contains(/background-image: url[\s\S]*?display: block;[\s\S]*?@media[\s\S]*?transform:/) { remove: true; }
-techradar.com,toimitilat.kauppalehti.fi#@#.sponsored-article
 techraptor.net,tftactics.gg###nn_player
 techraptor.net,unite-db.com###nn_lb1
 techraptor.net,unite-db.com###nn_lb2
