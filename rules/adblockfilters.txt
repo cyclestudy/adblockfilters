@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260829035812
-! Last modified: 2026/08/29 03:58:12
-! Blocked Filters: 105006
+! Version: 20260829140906
+! Last modified: 2026/08/29 14:09:06
+! Blocked Filters: 105005
 !
 ###AC_ad
 ###AD_160
@@ -38160,7 +38160,6 @@ analdin.com##body[style="background: #000000; margin: 0; padding: 0"]:not([class
 analdin.com,cockdude.com,coomer.st,fapcat.com,gelbooru.com,kemono.cr,official.coomer.com.co##a[href*="/tsyndicate.com/"]
 analdin.com,streamporn.pw#%#//scriptlet("abort-on-property-read", "popunder")
 analdin.xxx###lj-container
-analdin.xxx##.banner-top
 analdin.xxx##div[style="position: absolute; inset: 0px; overflow: hidden; background: transparent; display: block;"]
 analdin.xxx##div[style^="text-align:"][style*="width: 950px;"]
 analdin.xxx##iframe[src*="lovelybingo.com/"]
@@ -77321,6 +77320,7 @@ streamingdue.com##aside[class="widget_text td_block_template_8 widget widget_cus
 streamingmedia.com##.expand
 streamingnow.mov$$script:contains(adserverDomain)
 streamingsites.com,torrentsites.com##.block-vpn
+streamiz.lol,analdin.xxx##.banner-top
 streamlive.to###ad_footer
 streamlive.to###ad_overlay
 streamlive.to###clickablelink
@@ -103970,7 +103970,6 @@ zzzyk.com###Tinfo
 ||wpa.b.qq.com/cgi/wpa.php?
 ||wpdaxue.com/img/*/txy-
 ||wpengine.com/wp-json/api/advanced_placement/api-in-article-ad/
-||wpengine.com/wp-json/api/advanced_placement/new-in-article/?type=placement^$domain=androidauthority.com
 ||wpimg.pl/a/i/stg/wpjslib_*.js$replace=/((display:\\s\*)none(\\s\*!important)|((\.hostname;function .\(\)|\,.=function\(\))\{return) .===[\S]*?(\}))/\$2\$3\$4\$6/,script
 ||wpzoom.com/images/aff/
 ||wqah.com/images/banners/
