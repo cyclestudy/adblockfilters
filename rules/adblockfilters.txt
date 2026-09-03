@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260903031629
-! Last modified: 2026/09/03 03:16:29
-! Blocked Filters: 104811
+! Version: 20260903113027
+! Last modified: 2026/09/03 11:30:27
+! Blocked Filters: 104817
 !
 ###AC_ad
 ###AD_160
@@ -32068,6 +32068,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||muzlan.top^$generichide
 @@||mvcat.com^$generichide
 @@||mvz.hufeland.de^$stealth=dpi
+@@||mwa.co.th^$stealth=dpi
 @@||mxcontent.net^$media,third-party,stealth=referrer
 @@||mxomo.com^$image,stealth=referrer,domain=kxo.moe
 @@||my-bucket-s3-*-amazonaws.*.*/*.m3u8$stealth=referrer,domain=ibomma.*
@@ -39070,6 +39071,8 @@ appuals.com##.appua-reimage-top
 appuals.com##.expu-protipeop
 aptoide.com##div[class*="__AdsContainer-"]
 apunkasoftware.net,apunkagames.com,thefileslocker.net##center > a[rel="noreferrer noopener"]
+aquaguardservices.co.in,fakepe.com,rajcet.com#$#body { overflow: auto !important; }
+aquaguardservices.co.in,fakepe.com,rajcet.com#$#div[style^="position: fixed; inset: 0px; z-index: 10001;"] { display: none !important; }
 aquareader.net##.body-wrap > div.c-sidebar.c-top-sidebar
 aquiyahorajuegos.net,graphicux.com,netfuck.net,baddiehub.com#%#//scriptlet("prevent-setTimeout", "css_class.show")
 aqweeb.com##.adhere
@@ -49706,8 +49709,6 @@ fakemail.net##div.noPadding[style="height:200px !important;"]
 fakemail.net##div[style^="height:120px;"] > .donate
 fakenamegenerator.com##.bcsw
 fakenhamtimes.co.uk,theargus.co.uk,eadt.co.uk,edp24.co.uk,dorsetecho.co.uk##.mar-leaderboard--top
-fakepe.com,rajcet.com#$#body { overflow: auto !important; }
-fakepe.com,rajcet.com#$#div[style^="position: fixed; inset: 0px; z-index: 10001;"] { display: none !important; }
 fakeupdate.net###itemz
 fakings.com###undervideo
 fakings.com##.centrado
@@ -87326,6 +87327,7 @@ zzzyk.com###Tinfo
 ||11livematches.com/images/footballtipster2.jpg
 ||11livematches.com/images/watch_football.jpg
 ||11livematches.com/rent_space/
+||11nux.com^$third-party
 ||11st.co.kr/st/
 ||120.132.57.41/pjk/pag/ys.php
 ||120askimages.com/ask/js/askfrom.js
@@ -87516,10 +87518,12 @@ zzzyk.com###Tinfo
 ||2005net.net^$third-party
 ||2008mm.com^*.js
 ||2008xxx.com:888
+||200summit.com^$third-party
 ||2018x.*/guang/
 ||202.102.26.253:8182/files/7/lhzs1k.jpg
 ||203.195.121.$popup
 ||2048hd1.com/js/tc.js
+||204st.us^$third-party
 ||20mao.com/52
 ||20mao.com/js/sj.
 ||20min.ch/ana/
@@ -87657,6 +87661,7 @@ zzzyk.com###Tinfo
 ||360kan.com/special/
 ||360kan.com/v1/block?blockid=544&
 ||360switch.net/b.js
+||360tag.com^$third-party
 ||365xuet.com/assets/web/js/main.jsr_
 ||36img.com/ad/
 ||36kr.com/pp/api/ap/plan?
@@ -88214,6 +88219,7 @@ zzzyk.com###Tinfo
 ||ac.tc.qq.com/store_file_download?*&dir_path=/admin/swf/
 ||academia.edu/record_hit?
 ||acast.com/api/stats
+||access-analyze.org^$third-party
 ||accesstrade.vn/js/trackingtag/
 ||accesswire.com/img.ashx
 ||accor.com/g/collect?
