@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260905194315
-! Last modified: 2026/09/05 19:43:15
-! Blocked Filters: 104952
+! Version: 20260906015930
+! Last modified: 2026/09/06 01:59:30
+! Blocked Filters: 104954
 !
 ###AC_ad
 ###AD_160
@@ -51198,6 +51198,7 @@ forbes.com###featured-partners.with-adv-icon
 forbes.com###stackForbesAdvoice
 forbes.com##.MWrh7
 forbes.com##.adblock-unused
+forbes.com##.article-body-container > div[class]> div[class]:has(> div[class]:only-child > fbs-video[ad-unit-path]:only-child)
 forbes.com##.article-speed-bump
 forbes.com##.channel--ad
 forbes.com##.fbs-ad--mobile-medianet-wrapper
@@ -51231,6 +51232,7 @@ forbes.com##div[class^="fbs-ad"]
 forbes.com##div[class^="fbs-ad--"]
 forbes.com##div[data-testid^="fbs-ad"]
 forbes.com##div[id^="google_ads_iframe_"]
+forbes.com##fbs-video[ad-unit-path]
 forbes.com#$#.main-content--body { padding-top: unset !important; }
 forbes.com#$#body .current-page.ads-loaded { display: block !important; }
 forbes.com#?#.section-content > section.generic-widget-wrapper:has(> div.featured-widget)
