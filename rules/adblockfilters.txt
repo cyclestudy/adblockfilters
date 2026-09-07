@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260907220349
-! Last modified: 2026/09/07 22:03:49
-! Blocked Filters: 104292
+! Version: 20260908034057
+! Last modified: 2026/09/08 03:40:57
+! Blocked Filters: 104297
 !
 ###AC_ad
 ###AD_160
@@ -27425,6 +27425,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||bgnvrsk.ru/ads/
 @@||bgp.he.net/images/flags/*.gif?$image,~third-party
 @@||bham.pl/templates/bham_res/js/adsbygoogle.js
+@@||bharat-connect.com^$extension='AdGuard Popup Blocker'
+@@||bharat-connect.com^$stealth=location
 @@||bhaskar.com/adblock/*.js^
 @@||bhavanijewellery.in/ads9.gif$domain=atozmath.com
 @@||bhc.co.kr^$stealth=dpi
@@ -69413,6 +69415,9 @@ planetsuzy.org,motherless.com#%#//scriptlet('abort-current-inline-script', 'jQue
 planetware.com##.mediavine-sidebar-atf-target
 planningportal.co.uk##.HeaderAdArea__HeaderAdContainer-sc-1lqw6d0-0
 planyourroom.com,nelomanga.net,natomanga.com,coinadster.com,kissasian.*,israel21c.org,veck.io,filmelier.com,ncaa.com,short.croclix.me##.banner-container
+plataformamedia.com#%#//scriptlet('set-constant', 'advanced_ads_check_adblocker', 'noopFunc')
+plataformamedia.com#@#.ad-unit:not(.textads)
+plataformamedia.com#@#.ad_unit
 play-games.com##.game-ad-container
 play-games.com##.website-ad-space-area
 play.anghami.com##.content > .mpu
