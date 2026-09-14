@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260914023635
-! Last modified: 2026/09/14 02:36:35
-! Blocked Filters: 105150
+! Version: 20260914115553
+! Last modified: 2026/09/14 11:55:53
+! Blocked Filters: 105151
 !
 ###AC_ad
 ###AD_160
@@ -25679,7 +25679,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@/js/*.js?ads*1&AdType=1&$~third-party,script,domain=streamwish.to|streamxxx.online|mwish.pro|embedwish.com|awish.pro|wishfast.top|sfastwish.com|vidhidevip.com|rubystm.com
 @@/js/*/*.js?_v=$~third-party,domain=cracking.org
 @@/js/admanager/ads.js$domain=businessnovinite.bg|btv.bg|btvsport.bg|btvplus.bg|btvnovinite.bg
-@@/js/ads.js|$script,~third-party,domain=~internethaber.com|~knaqu.tv|~5ch.io
+@@/js/ads.js|$script,~third-party,domain=~internethaber.com|~knaqu.tv|~5ch.io|~svetserialu.to
 @@/js/advert.js$~third-party,domain=~maket.laserbiz.ru
 @@/js/advertisement.$domain=blogs.sapib.ca
 @@/js/adview_*.adsbygoogle.js$~third-party,domain=letv8.cc|zhibo1.cc
@@ -77808,7 +77808,7 @@ svetmobilne.cz,svethardware.cz###header > #topbar > .box > a[target="_blank"] > 
 svetmobilne.cz,svethardware.cz###sidebar > .box > a[target="_blank"] > img
 svetmobilne.cz,svethardware.cz#?#.box > .caption:contains(/^reklama$/)
 svetserialu.to##.alert_premiumExpired
-svetserialu.to##body > div[class][style^="z-index:"]
+svetserialu.to##body > .loader ~ div[class][style*="z-index"]:not([id])
 svetzeny.cz#%#//scriptlet('set-constant', '__burdaAds', 'emptyObj')
 svetzeny.cz#%#//scriptlet('set-constant', '__burdaAds.getDevice', 'noopFunc')
 svetzeny.cz#%#//scriptlet('set-constant', '__burdaAds.isSeznam', 'noopFunc')
@@ -102101,6 +102101,7 @@ zzzyk.com###Tinfo
 ||svcs.ebay.com/ufeservice/v1/metrics
 ||svet24.si/build/assets/adbeacon.js
 ||svetapple.sk/*/ecophone-banner.jpg
+||svetserialu.to/assets/js/ads.js
 ||svgcolor.com/assets/js/template/anti-block.js
 ||sw76r85eda3k.com/need/h5.
 ||swa.gtimg.com/
